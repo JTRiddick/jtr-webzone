@@ -1,0 +1,56 @@
+@import "reset.scss";
+@import "html5boilerplate.scss";
+
+@import url('http://fonts.googleapis.com/css?family=Raleway:700,400,300');
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,300&amp;subset=latin,latin-ext');
+
+// /*
+//     Palette
+//     2d3142-bfc0c0-ffffff-ef8354-4f5d75
+// */
+
+@media (max-width: 768px) {
+    .jumbotron h1{
+        padding-top: 3em;
+    } .jumbotron .container p  {
+    padding-top: 1em;
+  }
+}
+
+body{
+  background: #bfc0c0;
+  font-family: 'Raleway','Open Sans',sans-serif;
+}
+
+.thumbnail {
+
+  max-width: 320px;
+  max-height: 320px;
+
+}
+
+.block-one {
+
+    padding: 2em;
+    font-size: 2em;
+    margin:auto;
+
+
+
+}
+
+.row.col-md-4{
+
+
+}
+
+#quincy{
+
+
+}
+
+#quincy-content{
+    color: #BFc0c0;
+    background: #4F5D75;
+
+}
