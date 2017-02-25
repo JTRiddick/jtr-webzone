@@ -1,3 +1,4 @@
+
 @import "reset.scss";
 @import "html5boilerplate.scss";
 
@@ -7,50 +8,191 @@
 // /*
 //     Palette
 //     2d3142-bfc0c0-ffffff-ef8354-4f5d75
+//     SASS: node-sass --include-path scss scss/style.scss css/main.css --watch
 // */
 
-@media (max-width: 768px) {
-    .jumbotron h1{
-        padding-top: 3em;
-    } .jumbotron .container p  {
-    padding-top: 1em;
-  }
-}
 
 body{
   background: #bfc0c0;
   font-family: 'Raleway','Open Sans',sans-serif;
 }
+h1{
+  font-size:3em;
+}
+a{
+  text-decoration: none;
+  color:white;
+  text-shadow: 1px 1px #bfc0c0;
+}
+.page-container{
+  max-width: 1440px;
+  margin:0 auto;
+}
+.superheader{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: #eee;
 
+  .container{
+    margin:12px 24px;
+  }
+}
+.superheader::after{
+  content:" ";
+  clear:both;
+  padding:-6px;
+}
+
+.container{
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.centered{
+  margin:0 auto;
+  text-align: center;
+}
+
+.panel{
+  margin:1em;
+  padding:12px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+}
 .thumbnail {
-
   max-width: 320px;
   max-height: 320px;
+}
+
+.navbar{
+  background-image: -webkit-linear-gradient(top, #3c3c3c 0%, #222 100%);
+  background-image:      -o-linear-gradient(top, #3c3c3c 0%, #222 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3c3c3c), to(#222));
+  background-image:         linear-gradient(to bottom, #3c3c3c 0%, #222 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3c3c3c', endColorstr='#ff222222', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  background-repeat: repeat-x;
+  border-radius: 4px;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  color: #777;
+
+  .navbar-brand{
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .25);
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
 
 }
+
 
 .block-one {
+  padding: 2em;
+  font-size: 2em;
+  color: #BFc0c0;
+  background: #4F5D75;
+}
 
-    padding: 2em;
-    font-size: 2em;
-    margin:auto;
-
-
+.row{
+  margin-right: -15px;
+  margin-left: -15px;
+  .col{
+    float: left;
+  }
+  .col-third{
+    float: left;
+    width: 33.33333333%;
+  }
 
 }
 
-.row.col-md-4{
-
-
+.hidden-section{
+  opacity: 0;
+  display: none;
+}
+.visible-section{
+  opacity: 1;
+  display:block;
 }
 
+.button{
+  line-height: 1.3333333;
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+}
+.button::before{
+  // margin:12px;
+  content:" ";
+}
+
+.large{
+  font-size: 18px;
+  padding: 10px 16px;
+  border-radius: 6px;
+  line-height: 1.42857143;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+//put group on parent of floated elements for clearfix/collapse prevent
 #quincy{
 
 
 }
 
-#quincy-content{
-    color: #BFc0c0;
-    background: #4F5D75;
+#extended-content{
+  color: #BFc0c0;
+  background: #4F5D75;
+  transition: all 0.5s ease;
+}
 
+.btn ~ .block-one {
+  margin:81px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+  .page-container{
+    max-width: 750px;
+  }
+}
+
+@media (min-width: 960px) {
+  .container {
+    max-width:1380px;
+  }
+  .page-container{
+    max-width:1440px;
+  }
 }
