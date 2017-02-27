@@ -53,19 +53,26 @@ a{
   background-color: #eee;
   box-sizing: border-box;
   position: relative;
-  .container{
-    margin:12px 24px;
-  }
+  transition: all 0.33s ease-in-out;
+
 }
 .super-collapse{
   height:15vw;
   h1{
     font-size: 300%;
   }
+
+  .container{
+    margin:4px 8px;
+  }
 }
 .super-fill{
   max-height:100%;
   height:100vw;
+
+  .container{
+    margin:12px 24px;
+  }
 }
 .superheader > .container{
   margin-top: 3rem;
