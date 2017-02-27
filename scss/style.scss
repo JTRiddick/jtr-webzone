@@ -25,29 +25,89 @@ a{
   text-shadow: 1px 1px #bfc0c0;
 }
 .page-container{
-  max-width: 1440px;
+  position: relative;
+  width:100%;
+  max-width: 2356px;
   margin:0 auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .superheader{
+  h1{
+    font-size: 1266%;
+    font-weight: 700;
+  }
+
+  span{
+    font-style: italic;
+    font-size: 200%;
+    font-weight: lighter;
+    letter-spacing: 1px;
+  }
+
   padding-top: 30px;
   padding-bottom: 30px;
   margin-bottom: 30px;
   color: inherit;
   background-color: #eee;
-
+  box-sizing: border-box;
+  position: relative;
   .container{
     margin:12px 24px;
   }
 }
+.super-collapse{
+  height:15vw;
+  h1{
+    font-size: 300%;
+  }
+}
+.super-fill{
+  max-height:100%;
+  height:100vw;
+}
+.superheader > .container{
+  margin-top: 3rem;
+}
+.superheader.super-collapse > .container{
+  margin-top: 3rem;
+  top:20%;
+}
+
 .superheader::after{
   content:" ";
   clear:both;
   padding:-6px;
 }
+.blueprint-grid{
+  background-color: #4e9ad5;
+  background-image: linear-gradient(rgba(255, 255, 255, .3) 1px, transparent 1px),
+                     linear-gradient(0, rgba(255, 255, 255, .3) 1px, transparent 1px),
+                     linear-gradient(rgba(255, 255, 255, .1) 1px, transparent 1px),
+                     linear-gradient(0, rgba(255, 255, 255, .1) 1px, transparent 1px);
+   background-image: -webkit-linear-gradient(rgba(255, 255, 255, .3) 1px, transparent 1px),
+                     -webkit-linear-gradient(0, rgba(255, 255, 255, .3) 1px, transparent 1px),
+                     -webkit-linear-gradient(rgba(255, 255, 255, .1) 1px, transparent 1px),
+                     -webkit-linear-gradient(0, rgba(255, 255, 255, .1) 1px, transparent 1px);
+   background-image: -moz-linear-gradient(rgba(255, 255, 255, .3) 1px, transparent 1px),
+                     -moz-linear-gradient(0, rgba(255, 255, 255, .3) 1px, transparent 1px),
+                     -moz-linear-gradient(rgba(255, 255, 255, .1) 1px, transparent 1px),
+                     -moz-linear-gradient(0, rgba(255, 255, 255, .1) 1px, transparent 1px);
+   background-image: -ms-linear-gradient(rgba(255, 255, 255, .3) 1px, transparent 1px),
+                     -ms-linear-gradient(0, rgba(255, 255, 255, .3) 1px, transparent 1px),
+                     -ms-linear-gradient(rgba(255, 255, 255, .1) 1px, transparent 1px),
+                     -ms-linear-gradient(0, rgba(255, 255, 255, .1) 1px, transparent 1px);
+   background-image: -o-linear-gradient(rgba(255, 255, 255, .3) 1px, transparent 1px),
+                     -o-linear-gradient(0, rgba(255, 255, 255, .3) 1px, transparent 1px),
+                     -o-linear-gradient(rgba(255, 255, 255, .1) 1px, transparent 1px),
+                     -o-linear-gradient(0, rgba(255, 255, 255, .1) 1px, transparent 1px);
+}
 
 .container{
   padding-right: 15px;
   padding-left: 15px;
+  position: relative;
 }
 .centered{
   margin:0 auto;
@@ -78,6 +138,8 @@ a{
   left: 0;
   z-index: 1030;
   color: #777;
+  width: 100%;
+  transition: top 0.2s ease-in-out;
 
   .navbar-brand{
     text-shadow: 0 -1px 0 rgba(0, 0, 0, .25);
@@ -86,11 +148,13 @@ a{
     padding: 15px 15px;
     font-size: 18px;
     line-height: 20px;
+
+  }
+  .up{
+    top:-40px;
   }
 
-
 }
-
 
 .block-one {
   padding: 2em;
@@ -175,11 +239,11 @@ a{
   transition: all 0.5s ease;
 }
 
-.btn ~ .block-one {
-  margin:81px;
+ div.container.group.block-one ~ div.generic.container.btn{
+  margin:22px;
 }
 
-@media (max-width: 768px) {
+@media screen and(max-width: 768px) {
   .container {
     max-width: 640px;
   }
@@ -188,7 +252,7 @@ a{
   }
 }
 
-@media (min-width: 960px) {
+@media screen and(max-width: 960px) {
   .container {
     max-width:1380px;
   }

@@ -309,26 +309,66 @@ a {
   text-shadow: 1px 1px #bfc0c0; }
 
 .page-container {
-  max-width: 1440px;
-  margin: 0 auto; }
+  position: relative;
+  width: 100%;
+  max-width: 2356px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
 .superheader {
   padding-top: 30px;
   padding-bottom: 30px;
   margin-bottom: 30px;
   color: inherit;
-  background-color: #eee; }
+  background-color: #eee;
+  box-sizing: border-box;
+  position: relative; }
+  .superheader h1 {
+    font-size: 1266%;
+    font-weight: 700; }
+  .superheader span {
+    font-style: italic;
+    font-size: 200%;
+    font-weight: lighter;
+    letter-spacing: 1px; }
   .superheader .container {
     margin: 12px 24px; }
+
+.super-collapse {
+  height: 15vw; }
+  .super-collapse h1 {
+    font-size: 300%; }
+
+.super-fill {
+  max-height: 100%;
+  height: 100vw; }
+
+.superheader > .container {
+  margin-top: 3rem; }
+
+.superheader.super-collapse > .container {
+  margin-top: 3rem;
+  top: 20%; }
 
 .superheader::after {
   content: " ";
   clear: both;
   padding: -6px; }
 
+.blueprint-grid {
+  background-color: #4e9ad5;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3) 1px, transparent 1px), linear-gradient(0, rgba(255, 255, 255, 0.3) 1px, transparent 1px), linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px), linear-gradient(0, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.3) 1px, transparent 1px), -webkit-linear-gradient(0, rgba(255, 255, 255, 0.3) 1px, transparent 1px), -webkit-linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px), -webkit-linear-gradient(0, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.3) 1px, transparent 1px), -moz-linear-gradient(0, rgba(255, 255, 255, 0.3) 1px, transparent 1px), -moz-linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px), -moz-linear-gradient(0, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-image: -ms-linear-gradient(rgba(255, 255, 255, 0.3) 1px, transparent 1px), -ms-linear-gradient(0, rgba(255, 255, 255, 0.3) 1px, transparent 1px), -ms-linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px), -ms-linear-gradient(0, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.3) 1px, transparent 1px), -o-linear-gradient(0, rgba(255, 255, 255, 0.3) 1px, transparent 1px), -o-linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px), -o-linear-gradient(0, rgba(255, 255, 255, 0.1) 1px, transparent 1px); }
+
 .container {
   padding-right: 15px;
-  padding-left: 15px; }
+  padding-left: 15px;
+  position: relative; }
 
 .centered {
   margin: 0 auto;
@@ -356,7 +396,9 @@ a {
   right: 0;
   left: 0;
   z-index: 1030;
-  color: #777; }
+  color: #777;
+  width: 100%;
+  transition: top 0.2s ease-in-out; }
   .navbar .navbar-brand {
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
     float: left;
@@ -364,6 +406,8 @@ a {
     padding: 15px 15px;
     font-size: 18px;
     line-height: 20px; }
+  .navbar .up {
+    top: -40px; }
 
 .block-one {
   padding: 2em;
@@ -431,16 +475,16 @@ a {
   background: #4F5D75;
   transition: all 0.5s ease; }
 
-.btn ~ .block-one {
-  margin: 81px; }
+div.container.group.block-one ~ div.generic.container.btn {
+  margin: 22px; }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .container {
     max-width: 640px; }
   .page-container {
     max-width: 750px; } }
 
-@media (min-width: 960px) {
+@media screen and (max-width: 960px) {
   .container {
     max-width: 1380px; }
   .page-container {
