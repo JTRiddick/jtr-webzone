@@ -362,11 +362,7 @@ a {
 
 .blueprint-grid {
   background-color: #4e9ad5;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.3) 1px, transparent 1px), linear-gradient(0, rgba(255, 255, 255, 0.3) 1px, transparent 1px), linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px), linear-gradient(0, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.3) 1px, transparent 1px), -webkit-linear-gradient(0, rgba(255, 255, 255, 0.3) 1px, transparent 1px), -webkit-linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px), -webkit-linear-gradient(0, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
-  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.3) 1px, transparent 1px), -moz-linear-gradient(0, rgba(255, 255, 255, 0.3) 1px, transparent 1px), -moz-linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px), -moz-linear-gradient(0, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
-  background-image: -ms-linear-gradient(rgba(255, 255, 255, 0.3) 1px, transparent 1px), -ms-linear-gradient(0, rgba(255, 255, 255, 0.3) 1px, transparent 1px), -ms-linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px), -ms-linear-gradient(0, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
-  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.3) 1px, transparent 1px), -o-linear-gradient(0, rgba(255, 255, 255, 0.3) 1px, transparent 1px), -o-linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px), -o-linear-gradient(0, rgba(255, 255, 255, 0.1) 1px, transparent 1px); }
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.2) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px), linear-gradient(to left, rgba(255, 255, 255, 0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px); }
 
 .container {
   padding-right: 15px;
