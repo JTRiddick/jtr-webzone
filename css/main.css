@@ -367,7 +367,8 @@ a {
 .container {
   padding-right: 15px;
   padding-left: 15px;
-  position: relative; }
+  position: relative;
+  z-index: 1; }
 
 .centered {
   margin: 0 auto;
@@ -413,6 +414,14 @@ a {
   font-size: 2em;
   color: #BFc0c0;
   background: #4F5D75; }
+
+.block-two {
+  padding: 2em;
+  font-size: 2em; }
+
+.block-three {
+  padding: 2em;
+  font-size: 2em; }
 
 .row {
   margin-right: -15px;
