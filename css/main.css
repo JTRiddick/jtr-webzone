@@ -331,7 +331,7 @@ a {
   box-sizing: border-box; }
 
 .superheader {
-  overflow: hidden;
+  overflow: auto;
   padding-top: 30px;
   padding-bottom: 30px;
   color: inherit;
@@ -346,22 +346,25 @@ a {
   box-sizing: border-box; }
   .superheader h1 {
     font-size: 5em;
-    font-weight: 700; }
+    font-weight: 700;
+    text-shadow: 6px 2px #a1a1a1; }
   .superheader span {
     font-style: italic;
     font-size: 200%;
     font-weight: lighter;
     letter-spacing: 1px; }
   .superheader .container {
-    margin: 64px 128px; }
+    margin: 20% 20% 0 20%; }
   .superheader :nth-child(2) {
     max-width: 48%;
-    margin: 0 auto; }
+    margin: 6em auto 0 auto; }
   .superheader :last-child {
+    margin-top: 0;
+    padding-top: 0;
     margin-bottom: 0;
     padding-bottom: 0;
+    bottom: -4%;
     position: relative;
-    bottom: -33%;
     z-index: 9999; }
 
 .superheader.super-collapse > .container {
@@ -371,12 +374,12 @@ a {
 .superheader::after {
   content: " ";
   clear: both;
-  padding: -12px;
   z-index: 1; }
 
 .blueprint-grid {
   background-color: #4e9ad5;
-  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.4) 2px, transparent 2px), linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 2px, transparent 2px), linear-gradient(to left, rgba(255, 255, 255, 0.2) 2px, transparent 2px), linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 2px, transparent 2px); }
+  background: url(../img/rob-bye-182304.jpg) center no-repeat;
+  background-size: 133%; }
 
 .container {
   padding-right: 15px;
@@ -429,7 +432,8 @@ a {
 .block {
   z-index: 50;
   padding: 0.25em;
-  font-size: 1em; }
+  font-size: 1em;
+  min-height: 333px; }
 
 .block-one {
   background-color: #a1a1a1;

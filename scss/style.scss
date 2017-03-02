@@ -41,6 +41,7 @@ a{
   h1{
     font-size: 5em;
     font-weight: 700;
+    text-shadow: 6px 2px $darkerGrau;
   }
 
   span{
@@ -49,7 +50,7 @@ a{
     font-weight: lighter;
     letter-spacing: 1px;
   }
-  overflow: hidden;
+  overflow: auto;
   padding-top: 30px;
   padding-bottom: 30px;
   color: inherit;
@@ -62,11 +63,11 @@ a{
 
 
   .container{
-    margin:64px 128px;
+    margin:20% 20% 0 20%;
   }
   :nth-child(2){
     max-width: 48%;
-    margin:0 auto;
+    margin:6em auto 0 auto;
   }
 
   :last-child{
@@ -74,6 +75,7 @@ a{
     padding-top:0;
     margin-bottom:0;
     padding-bottom:0;
+    bottom:-4%;
     position: relative;
     z-index: 9999;
   }
@@ -92,11 +94,8 @@ a{
 }
 .blueprint-grid{
   background-color: #4e9ad5;
-  background-image:
-linear-gradient(to left, rgba(255, 255, 255, 0.4) 2px, transparent 2px),
-linear-gradient(to bottom, rgba(255, 255, 255, .2) 2px, transparent 2px),
-linear-gradient(to left, rgba(255, 255, 255, .2) 2px, transparent 2px),
-linear-gradient(to bottom, rgba(255, 255, 255, .2) 2px, transparent 2px);
+  background:url(../img/rob-bye-182304.jpg) center no-repeat;
+  background-size:133%;
 }
 
 .container{
@@ -157,7 +156,7 @@ linear-gradient(to bottom, rgba(255, 255, 255, .2) 2px, transparent 2px);
   z-index: 50;
   padding: 0.25em;
   font-size: 1em;
-
+  min-height: 333px;
 }
 .block-one {
   background-color: $darkerGrau;
