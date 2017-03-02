@@ -52,23 +52,28 @@ a{
   overflow: hidden;
   padding-top: 30px;
   padding-bottom: 30px;
-  margin-bottom: 30px;
   color: inherit;
   background-color: #eee;
   position: relative;
   transition: all 0.50s ease-in-out;
+  z-index: 999;
+  box-shadow: 10px 4px 8px rgba(0, 0, 0, .5);
   @include border-box;
 
 
   .container{
     margin:64px 128px;
   }
+  :nth-child(2){
+    max-width: 48%;
+    margin:0 auto;
+  }
 
   :last-child{
     margin-bottom:0;
     padding-bottom:0;
     position: relative;
-    bottom:-8%;
+    bottom:-33%;
     z-index: 9999;
   }
 }
@@ -88,10 +93,10 @@ a{
 .blueprint-grid{
   background-color: #4e9ad5;
   background-image:
-linear-gradient(to left, rgba(255, 255, 255, 0.2) 1px, transparent 1px),
-linear-gradient(to bottom, rgba(255, 255, 255, .1) 1px, transparent 1px),
-linear-gradient(to left, rgba(255, 255, 255, .1) 1px, transparent 1px),
-linear-gradient(to bottom, rgba(255, 255, 255, .1) 1px, transparent 1px);
+linear-gradient(to left, rgba(255, 255, 255, 0.4) 2px, transparent 2px),
+linear-gradient(to bottom, rgba(255, 255, 255, .2) 2px, transparent 2px),
+linear-gradient(to left, rgba(255, 255, 255, .2) 2px, transparent 2px),
+linear-gradient(to bottom, rgba(255, 255, 255, .2) 2px, transparent 2px);
 }
 
 .container{
@@ -109,7 +114,7 @@ linear-gradient(to bottom, rgba(255, 255, 255, .1) 1px, transparent 1px);
 .panel{
   margin:1em;
   padding:12px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+
 }
 .thumbnail {
   max-width: 320px;
@@ -148,23 +153,29 @@ linear-gradient(to bottom, rgba(255, 255, 255, .1) 1px, transparent 1px);
 
 }
 
-.block-one {
-  padding: 2em;
+.block{
+  z-index: 50;
+  padding: 0.25em;
   font-size: 1em;
+
+}
+.block-one {
+  background-color: $darkerGrau;
+  color:$wit;
+}
+.block-two{
   color: $darkGrau;
   background: $grayblau;
 }
-.block-two{
-  padding:2em;
-  font-size: 1em;
+.block-three{
+
   color:$wit;
   background-color:$rot
 }
-.block-three{
-  padding:2em;
-  font-size: 1em;
-  background-color: $orange;
-  color:$grau;
+.panel-heading ~ .panel-body>p{
+  margin-bottom: 6px;
+  border-top: 2px solid $grau;
+  padding:12px;
 }
 .row{
   margin-right: -15px;

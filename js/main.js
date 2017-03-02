@@ -12,9 +12,9 @@ $(document).ready(function(){
  //hide extra content
 
 $(window).resize(function(){
+  bodyHeight = $(document).height();
   console.log('resize header');
   $('.superheader').height = bodyHeight;
-  $('.superheader').width = bodyWidth;
 })
 
  //set size of superheader

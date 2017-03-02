@@ -334,11 +334,12 @@ a {
   overflow: hidden;
   padding-top: 30px;
   padding-bottom: 30px;
-  margin-bottom: 30px;
   color: inherit;
   background-color: #eee;
   position: relative;
   transition: all 0.50s ease-in-out;
+  z-index: 999;
+  box-shadow: 10px 4px 8px rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -353,11 +354,14 @@ a {
     letter-spacing: 1px; }
   .superheader .container {
     margin: 64px 128px; }
+  .superheader :nth-child(2) {
+    max-width: 48%;
+    margin: 0 auto; }
   .superheader :last-child {
     margin-bottom: 0;
     padding-bottom: 0;
     position: relative;
-    bottom: -8%;
+    bottom: -33%;
     z-index: 9999; }
 
 .superheader.super-collapse > .container {
@@ -372,7 +376,7 @@ a {
 
 .blueprint-grid {
   background-color: #4e9ad5;
-  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.2) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px), linear-gradient(to left, rgba(255, 255, 255, 0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px); }
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.4) 2px, transparent 2px), linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 2px, transparent 2px), linear-gradient(to left, rgba(255, 255, 255, 0.2) 2px, transparent 2px), linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 2px, transparent 2px); }
 
 .container {
   padding-right: 15px;
@@ -390,8 +394,7 @@ a {
 
 .panel {
   margin: 1em;
-  padding: 12px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); }
+  padding: 12px; }
 
 .thumbnail {
   max-width: 320px;
@@ -423,23 +426,27 @@ a {
   .navbar .up {
     top: -40px; }
 
+.block {
+  z-index: 50;
+  padding: 0.25em;
+  font-size: 1em; }
+
 .block-one {
-  padding: 2em;
-  font-size: 1em;
+  background-color: #a1a1a1;
+  color: #fbfffa; }
+
+.block-two {
   color: #bfc0c0;
   background: #4f5d75; }
 
-.block-two {
-  padding: 2em;
-  font-size: 1em;
+.block-three {
   color: #fbfffa;
   background-color: #a0332f; }
 
-.block-three {
-  padding: 2em;
-  font-size: 1em;
-  background-color: #ef8354;
-  color: #e3e3e3; }
+.panel-heading ~ .panel-body > p {
+  margin-bottom: 6px;
+  border-top: 2px solid #e3e3e3;
+  padding: 12px; }
 
 .row {
   margin-right: -15px;
