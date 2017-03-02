@@ -5,17 +5,22 @@ $(document).ready(function(){
   var navbarHeight = $('nav').outerHeight();
   var headerHeight = $('header').outerHeight();
 
-  var bodyHeight = $(document).height();
+  var viewHeight = $(window).height();
   var bodyWidth = $(document).width();
 
  $("#extended-content").hide();
  //hide extra content
-
+setHeader(viewHeight);
 $(window).resize(function(){
-  bodyHeight = $(document).height();
-  console.log('resize header');
-  $('.superheader').height = bodyHeight;
+  viewHeight = $(window).height();
+  setHeader(viewHeight);
 })
+
+function setHeader(viewHeight){
+
+  console.log('resize header', viewHeight);
+  $('.superheader').height(viewHeight);
+}
 
  //set size of superheader
 
