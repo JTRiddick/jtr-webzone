@@ -1,6 +1,23 @@
 $(document).ready(function(){
+  var didScroll;
+  var lastScrollTop = 0;
+  var delta = 32;
+  var navbarHeight = $('nav').outerHeight();
+  var headerHeight = $('header').outerHeight();
+
+  var bodyHeight = $(document).height();
+  var bodyWidth = $(document).width();
 
  $("#extended-content").hide();
+ //hide extra content
+
+$(window).resize(function(){
+  console.log('resize header');
+  $('.superheader').height = bodyHeight;
+  $('.superheader').width = bodyWidth;
+})
+
+ //set size of superheader
 
   $('#extend-btn').click(function(){
  	  var $buttontext = $(this);
@@ -11,11 +28,6 @@ $(document).ready(function(){
   });
 
   // Hide Header on on scroll down
-  var didScroll;
-  var lastScrollTop = 0;
-  var delta = 5;
-  var navbarHeight = $('nav').outerHeight();
-  var headerHeight = $('header').outerHeight();
 
   $(window).scroll(function(event){
       didScroll = true;
@@ -37,12 +49,12 @@ $(document).ready(function(){
       if (st > lastScrollTop && st > navbarHeight){
           // Scroll Down
           $('nav').removeClass('nav-down').addClass('nav-up');
-          $('.superheader').removeClass('super-fill').addClass('super-collapse');
+          // $('.superheader').removeClass('super-fill').addClass('super-collapse');
       } else {
           // Scroll Up
           if(st + $(window).height() < $(document).height()) {
               $('nav').removeClass('nav-up').addClass('nav-down');
-              $('.superheader').removeClass('super-collapse').addClass('super-fill');
+              // $('.superheader').removeClass('super-collapse').addClass('super-fill');
           }
       }
 
