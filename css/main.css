@@ -331,9 +331,8 @@ a {
   box-sizing: border-box; }
 
 .superheader {
+  max-height: 100%;
   overflow: auto;
-  padding-top: 30px;
-  padding-bottom: 30px;
   color: inherit;
   background-color: #eee;
   position: relative;
@@ -357,7 +356,7 @@ a {
     margin: 20% 20% 0 20%; }
   .superheader :nth-child(2) {
     max-width: 48%;
-    margin: 6em auto 0 auto; }
+    margin: 4em auto 0 auto; }
   .superheader :last-child {
     margin-top: 0;
     padding-top: 0;
@@ -380,6 +379,13 @@ a {
   background-color: #4e9ad5;
   background: url(../img/rob-bye-182304.jpg) center no-repeat;
   background-size: 133%; }
+
+.fa-linkedin, .fa-github {
+  margin: 6px;
+  padding: 6px;
+  background: #4e9ad5;
+  border-radius: 20%;
+  float: left; }
 
 .container {
   padding-right: 15px;
@@ -438,6 +444,9 @@ a {
 .block-one {
   background-color: #a1a1a1;
   color: #fbfffa; }
+  .block-one .panel-body p {
+    font-size: 1.2em;
+    line-height: 1.225; }
 
 .block-two {
   color: #bfc0c0;
@@ -447,9 +456,9 @@ a {
   color: #fbfffa;
   background-color: #a0332f; }
 
-.panel-heading ~ .panel-body > p {
+.panel-heading > h2 {
   margin-bottom: 6px;
-  border-top: 2px solid #e3e3e3;
+  border-bottom: 2px solid #e3e3e3;
   padding: 12px; }
 
 .row {
@@ -460,6 +469,28 @@ a {
   .row .col-third {
     float: left;
     width: 33.33333333%; }
+
+.portfolio-list {
+  overflow: auto; }
+  .portfolio-list .archilocator {
+    background: url(../img/al-screencap-1.jpg) center no-repeat #e3e3e3;
+    background-size: cover; }
+  .portfolio-list .archilocator:target {
+    display: block;
+    width: 960px;
+    height: 720px;
+    background: url(../img/al-screencap-1.jpg) center no-repeat; }
+  .portfolio-list li {
+    float: left; }
+  .portfolio-list li:hover .portfolio-content {
+    background-color: rgba(10, 10, 10, 0.667); }
+  .portfolio-list .portfolio-item {
+    overflow: auto;
+    width: 384px;
+    height: 384px; }
+  .portfolio-list .portfolio-content {
+    width: inherit;
+    height: inherit; }
 
 .hidden-section {
   opacity: 0;
@@ -501,6 +532,9 @@ a {
   padding: 10px 16px;
   border-radius: 6px;
   line-height: 1.42857143; }
+
+.well {
+  overflow: auto; }
 
 .group :after {
   content: "";
