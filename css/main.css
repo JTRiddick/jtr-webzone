@@ -484,13 +484,21 @@ a {
     float: left; }
   .portfolio-list li:hover .portfolio-content {
     background-color: rgba(10, 10, 10, 0.667); }
+  .portfolio-list .archilocator:hover .portfolio-content:after {
+    content: "ArchiLocator";
+    line-height: 1.4;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    position: relative; }
   .portfolio-list .portfolio-item {
     overflow: auto;
-    width: 384px;
-    height: 384px; }
+    width: 300px;
+    height: 300px; }
   .portfolio-list .portfolio-content {
     width: inherit;
-    height: inherit; }
+    height: inherit;
+    background-color: rgba(10, 10, 10, 0.12); }
 
 .hidden-section {
   opacity: 0;

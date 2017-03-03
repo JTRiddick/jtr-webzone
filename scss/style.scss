@@ -219,15 +219,25 @@ a{
   li:hover .portfolio-content{
     background-color:rgba(10,10,10,0.667);
   }
+  .archilocator:hover .portfolio-content:after{
+    content:"ArchiLocator";
+    line-height: 1.4;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    position: relative;
+  }
   .portfolio-item{
     overflow: auto;
-    width: 384px;
-    height:384px;
+    width: 300px;
+    height:300px;
   }
   .portfolio-content{
     width: inherit;
     height:inherit;
+    background-color:rgba(10,10,10,0.12);
   }
+
 }
 
 .hidden-section{
