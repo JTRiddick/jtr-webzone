@@ -54,13 +54,12 @@ a{
 .superheader{
 
   max-height: 100%;
-  overflow: auto;
+  overflow: hidden;
   color: $teel;
-  background-color: rgba(0, 0, 0, .5);
   position: relative;
   transition: all 0.50s ease-in-out;
   z-index: 999;
-  box-shadow: 10px 4px 8px #eee;
+  height:60vw;
   @include border-box;
   h1{
     font-size: 5em;
@@ -76,11 +75,11 @@ a{
   }
 
   .container{
-    margin:5% 20% 0 20%;
+    margin:1% 20% 0 20%;
   }
   :nth-child(2){
     max-width: 48%;
-    margin:4em auto 0 auto;
+    margin:10% auto 10px auto;
   }
 
   :last-child{
@@ -88,9 +87,13 @@ a{
     padding-top:0;
     margin-bottom:0;
     padding-bottom:0;
-    bottom:-12px;
+    bottom:-25%;
     position: relative;
     z-index: 255;
+  }
+  h2 ~ p{
+    position: relative;
+    top: 128px;
   }
 }
 
@@ -174,9 +177,10 @@ a{
   min-height: 333px;
 }
 .block-one {
-  background-color: $darkerGrau;
   color:$wit;
-
+  transition: all 0.50s ease-in-out;
+  background-color: $deepPurp;
+  box-shadow: 10px 4px 8px #eee;
   .panel-body p{
     font-size: 1.2em;
     line-height: 1.225;
