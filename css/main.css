@@ -299,9 +299,13 @@ textarea {
 /* Coolors Exported Palette - coolors.co/a0332f-fbfffa-e3e3e3-247ba0-70c1b3 */
 /* HSL */
 /* RGB */
+@font-face {
+  font-family: 'Dosis';
+  src: url("../fonts/Dosis/Dosis-Regular.ttf"); }
+
 body {
   background: #bfc0c0;
-  font-family: 'Raleway','Open Sans',sans-serif; }
+  font-family: 'Dosis','Raleway','Open Sans',sans-serif; }
 
 h1 {
   font-size: 3em; }
@@ -330,15 +334,25 @@ a {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+.blueprint-grid {
+  background-color: #4e9ad5;
+  background: url(../img/rob-bye-182304.jpg) center no-repeat;
+  background-size: 133%; }
+
+.vaporwave-road {
+  background-color: #140C2A;
+  background: url(../img/header_bg.png) center no-repeat;
+  background-size: 100%; }
+
 .superheader {
   max-height: 100%;
   overflow: auto;
-  color: inherit;
-  background-color: #eee;
+  color: #70c1b3;
+  background-color: rgba(0, 0, 0, 0.5);
   position: relative;
   transition: all 0.50s ease-in-out;
   z-index: 999;
-  box-shadow: 10px 4px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 4px 8px #eee;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -346,14 +360,14 @@ a {
   .superheader h1 {
     font-size: 5em;
     font-weight: 700;
-    text-shadow: 6px 2px #a1a1a1; }
+    text-shadow: 6px 2px #140C2A; }
   .superheader span {
     font-style: italic;
     font-size: 200%;
     font-weight: lighter;
     letter-spacing: 1px; }
   .superheader .container {
-    margin: 20% 20% 0 20%; }
+    margin: 5% 20% 0 20%; }
   .superheader :nth-child(2) {
     max-width: 48%;
     margin: 4em auto 0 auto; }
@@ -362,9 +376,9 @@ a {
     padding-top: 0;
     margin-bottom: 0;
     padding-bottom: 0;
-    bottom: -4%;
+    bottom: -12px;
     position: relative;
-    z-index: 9999; }
+    z-index: 255; }
 
 .superheader.super-collapse > .container {
   margin-top: 3rem;
@@ -374,11 +388,6 @@ a {
   content: " ";
   clear: both;
   z-index: 1; }
-
-.blueprint-grid {
-  background-color: #4e9ad5;
-  background: url(../img/rob-bye-182304.jpg) center no-repeat;
-  background-size: 133%; }
 
 .fa-linkedin, .fa-github {
   margin: 6px;
