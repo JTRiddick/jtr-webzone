@@ -7,14 +7,8 @@
 @import url('http://fonts.googleapis.com/css?family=Raleway:700,400,300');
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,300&amp;subset=latin,latin-ext');
 
-@font-face {
-  font-family: 'Dosis';
-  src: url('../fonts/Dosis/Dosis-Regular.ttf');
-}
-
-
 body{
-  background: #bfc0c0;
+  background: $deepPurp;
   font-family: 'Dosis','Raleway','Open Sans',sans-serif;
 }
 h1{
@@ -60,6 +54,8 @@ a{
   transition: all 0.50s ease-in-out;
   z-index: 999;
   height:60vw;
+  border-bottom: 3px solid $sBlau;
+
   @include border-box;
   h1{
     font-size: 5em;
@@ -103,8 +99,7 @@ a{
 }
 
 .superheader::after{
-  content:" ";
-  clear:both;
+  @include group-clearfix;
   z-index: 1;
 }
 
@@ -177,7 +172,7 @@ a{
   min-height: 333px;
 }
 .block-one {
-  color:$wit;
+  color:$sBlau;
   transition: all 0.50s ease-in-out;
   background-color: $deepPurp;
   box-shadow: 10px 4px 8px #eee;
@@ -302,8 +297,15 @@ a{
 
 .well{
   overflow: auto;
+  color:$grau;
+  padding: 3px;
+  i:hover{
+    background-color: $teel;
+  }
 }
-
+footer{
+  color:$grau;
+}
 .group{
   @include group-clearfix;
 }

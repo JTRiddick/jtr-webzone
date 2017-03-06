@@ -12,6 +12,7 @@ $rot: rgba(160, 51, 47, 1);
 $wit: rgba(251, 255, 250, 1);
 $grau: rgba(227, 227, 227, 1);
 $lBlau: rgba(36, 123, 160, 1);
+$sBlau: rgba(0,242,233,1);
 $teel: rgba(112, 193, 179, 1);
 
 // /*
@@ -26,3 +27,39 @@ $darkGrau:#bfc0c0;
 $darkerGrau:#a1a1a1;
 $deepPurp: #140C2A;
 $bluprint:#4e9ad5;
+
+
+// Colors
+
+
+@font-face {
+  font-family: 'Dosis';
+  src: url('../fonts/Dosis/Dosis-Regular.ttf');
+}
+@font-face {
+  font-family: 'Dosis-Bold';
+  src: url('../fonts/Dosis/Dosis-Bold.ttf');
+}
+@font-face {
+  font-family: 'Dosis-Light';
+  src: url('../fonts/Dosis/Dosis-Light.ttf');
+}
+@font-face {
+  font-family: 'Dosis-Medium';
+  src: url('../fonts/Dosis/Dosis-Medium.ttf');
+}
+@font-face {
+  font-family: 'Dosis-SemiBold';
+  src: url('../fonts/Dosis/Dosis-SemiBold.ttf');
+}
+@font-face {
+  font-family: 'Dosis-ExtraLight';
+  src: url('../fonts/Dosis/Dosis-ExtraLight.ttf');
+}
+@font-face {
+  font-family: 'Dosis-ExtraBold';
+  src: url('../fonts/Dosis/Dosis-ExtraBold.ttf');
+}
+// !
+// FontZ
+// !

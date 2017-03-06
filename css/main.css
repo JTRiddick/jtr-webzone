@@ -303,8 +303,32 @@ textarea {
   font-family: 'Dosis';
   src: url("../fonts/Dosis/Dosis-Regular.ttf"); }
 
+@font-face {
+  font-family: 'Dosis-Bold';
+  src: url("../fonts/Dosis/Dosis-Bold.ttf"); }
+
+@font-face {
+  font-family: 'Dosis-Light';
+  src: url("../fonts/Dosis/Dosis-Light.ttf"); }
+
+@font-face {
+  font-family: 'Dosis-Medium';
+  src: url("../fonts/Dosis/Dosis-Medium.ttf"); }
+
+@font-face {
+  font-family: 'Dosis-SemiBold';
+  src: url("../fonts/Dosis/Dosis-SemiBold.ttf"); }
+
+@font-face {
+  font-family: 'Dosis-ExtraLight';
+  src: url("../fonts/Dosis/Dosis-ExtraLight.ttf"); }
+
+@font-face {
+  font-family: 'Dosis-ExtraBold';
+  src: url("../fonts/Dosis/Dosis-ExtraBold.ttf"); }
+
 body {
-  background: #bfc0c0;
+  background: #140C2A;
   font-family: 'Dosis','Raleway','Open Sans',sans-serif; }
 
 h1 {
@@ -352,6 +376,7 @@ a {
   transition: all 0.50s ease-in-out;
   z-index: 999;
   height: 60vw;
+  border-bottom: 3px solid #00f2e9;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -387,9 +412,11 @@ a {
   top: 20%; }
 
 .superheader::after {
-  content: " ";
-  clear: both;
   z-index: 1; }
+  .superheader::after :after {
+    content: "";
+    display: table;
+    clear: both; }
 
 .fa-linkedin, .fa-github {
   margin: 6px;
@@ -453,7 +480,7 @@ a {
   min-height: 333px; }
 
 .block-one {
-  color: #fbfffa;
+  color: #00f2e9;
   transition: all 0.50s ease-in-out;
   background-color: #140C2A;
   box-shadow: 10px 4px 8px #eee; }
@@ -555,7 +582,14 @@ a {
   line-height: 1.42857143; }
 
 .well {
-  overflow: auto; }
+  overflow: auto;
+  color: #e3e3e3;
+  padding: 3px; }
+  .well i:hover {
+    background-color: #70c1b3; }
+
+footer {
+  color: #e3e3e3; }
 
 .group :after {
   content: "";
