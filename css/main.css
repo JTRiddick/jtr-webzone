@@ -537,6 +537,14 @@ a {
     width: 960px;
     height: 720px;
     background: url(../img/blu-boomerang-1.png) center no-repeat; }
+  .portfolio-list .wages-of-space {
+    background: url(../img/wages-of-space-1.png) center no-repeat #e3e3e3;
+    background-size: cover; }
+  .portfolio-list .wages-of-space:target {
+    display: block;
+    width: 960px;
+    height: 720px;
+    background: url(../img/wages-of-space-1.png) center no-repeat; }
   .portfolio-list li {
     float: left; }
   .portfolio-list li:hover .portfolio-content {

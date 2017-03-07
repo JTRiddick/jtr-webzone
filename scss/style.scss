@@ -238,6 +238,16 @@ a{
     height: 720px;
     background:url(../img/blu-boomerang-1.png) center no-repeat;
   }
+  .wages-of-space{
+    background:url(../img/wages-of-space-1.png) center no-repeat $grau;
+    background-size:cover;
+  }
+  .wages-of-space:target{
+    display: block;
+    width: 960px;
+    height: 720px;
+    background:url(../img/wages-of-space-1.png) center no-repeat;
+  }
   li{
     float:left;
   }
