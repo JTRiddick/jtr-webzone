@@ -378,7 +378,7 @@ a {
   color: #70c1b3;
   position: relative;
   transition: all 0.50s ease-in-out;
-  z-index: 999;
+  z-index: 5;
   height: 60vw;
   border-bottom: 3px solid #00f2e9;
   box-sizing: border-box;
@@ -406,7 +406,7 @@ a {
     padding-bottom: 0;
     bottom: -25%;
     position: relative;
-    z-index: 255; }
+    z-index: 15; }
   .superheader h2 ~ p {
     position: relative;
     top: 128px; }
@@ -539,10 +539,14 @@ a {
     text-align: center; }
     .portfolio-list .portfolio-item:hover .portfolio-content a {
       font-weight: bold;
-      color: #00f2e9;
+      color: #70c1b3;
       position: relative;
       top: 120px;
       text-shadow: 2px 2px #140C2A; }
+    .portfolio-list .portfolio-item:hover .portfolio-content a:hover {
+      color: #00f2e9; }
+    .portfolio-list .portfolio-item:hover .portfolio-content a:active {
+      color: #a0332f; }
   .portfolio-list .portfolio-item {
     overflow: auto;
     width: 300px;

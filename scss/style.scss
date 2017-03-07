@@ -58,7 +58,7 @@ a{
   color: $teel;
   position: relative;
   transition: all 0.50s ease-in-out;
-  z-index: 999;
+  z-index: 5;
   height:60vw;
   border-bottom: 3px solid $sBlau;
 
@@ -91,7 +91,7 @@ a{
     padding-bottom:0;
     bottom:-25%;
     position: relative;
-    z-index: 255;
+    z-index: 15;
   }
   h2 ~ p{
     position: relative;
@@ -246,10 +246,16 @@ a{
     text-align: center;
     a{
       font-weight: bold;
-      color:$sBlau;
+      color:$teel;
       position: relative;
       top:120px;
       text-shadow: 2px 2px $deepPurp;
+    }
+    a:hover{
+      color:$sBlau;
+    }
+    a:active{
+      color:$rot;
     }
   }
   .portfolio-item{
