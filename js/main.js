@@ -66,6 +66,10 @@ $(document).ready(function(){
     lastScrollTop = st;
   }
 
+  function modalActivate(){
+    
+  }
+
 
 
 });

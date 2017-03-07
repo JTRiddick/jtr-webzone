@@ -10,6 +10,10 @@
 body{
   background: $deepPurp;
   font-family: 'Dosis','Raleway','Open Sans',sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
 }
 h1{
   font-size:3em;
@@ -226,13 +230,14 @@ a{
 
   }
   li:hover .portfolio-content{
-    background-color:rgba(10,10,10,0.667);
+    background-color:rgba(10,10,10,0.767);
   }
   .archilocator:hover .portfolio-content:after{
     content:"ArchiLocator";
     line-height: 1.4;
+    font-size: 1.225em;
     top: 50%;
-    left: 50%;
+    left:33%;
     text-align: center;
     position: relative;
   }
@@ -308,6 +313,9 @@ footer{
 }
 .group{
   @include group-clearfix;
+}
+.contact{
+  font-size: 1.125em;
 }
 //put group on parent of floated elements for clearfix/collapse prevent
 #quincy{

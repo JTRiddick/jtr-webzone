@@ -329,7 +329,10 @@ textarea {
 
 body {
   background: #140C2A;
-  font-family: 'Dosis','Raleway','Open Sans',sans-serif; }
+  font-family: 'Dosis','Raleway','Open Sans',sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 h1 {
   font-size: 3em; }
@@ -523,12 +526,13 @@ a {
   .portfolio-list li {
     float: left; }
   .portfolio-list li:hover .portfolio-content {
-    background-color: rgba(10, 10, 10, 0.667); }
+    background-color: rgba(10, 10, 10, 0.767); }
   .portfolio-list .archilocator:hover .portfolio-content:after {
     content: "ArchiLocator";
     line-height: 1.4;
+    font-size: 1.225em;
     top: 50%;
-    left: 50%;
+    left: 33%;
     text-align: center;
     position: relative; }
   .portfolio-list .portfolio-item {
@@ -595,6 +599,9 @@ footer {
   content: "";
   display: table;
   clear: both; }
+
+.contact {
+  font-size: 1.125em; }
 
 #extended-content {
   color: #BFc0c0;
