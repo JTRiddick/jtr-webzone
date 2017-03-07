@@ -123,6 +123,7 @@ a{
   position: relative;
   z-index: 10;
   @include border-box;
+  @include group-clearfix;
 }
 .centered{
   margin:0 auto;
@@ -227,9 +228,18 @@ a{
     height: 720px;
     background:url(../img/al-screencap-1.jpg) center no-repeat;
   }
+  .good-taste{
+    background:url(../img/blu-boomerang-1.png) center no-repeat $grau;
+    background-size:cover;
+  }
+  .good-taste:target{
+    display: block;
+    width: 960px;
+    height: 720px;
+    background:url(../img/blu-boomerang-1.png) center no-repeat;
+  }
   li{
     float:left;
-
   }
   li:hover .portfolio-content{
     background-color:rgba(10,10,10,0.767);

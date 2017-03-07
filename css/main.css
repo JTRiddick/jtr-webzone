@@ -438,6 +438,10 @@ a {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
+  .container :after {
+    content: "";
+    display: table;
+    clear: both; }
 
 .centered {
   margin: 0 auto;
@@ -525,6 +529,14 @@ a {
     width: 960px;
     height: 720px;
     background: url(../img/al-screencap-1.jpg) center no-repeat; }
+  .portfolio-list .good-taste {
+    background: url(../img/blu-boomerang-1.png) center no-repeat #e3e3e3;
+    background-size: cover; }
+  .portfolio-list .good-taste:target {
+    display: block;
+    width: 960px;
+    height: 720px;
+    background: url(../img/blu-boomerang-1.png) center no-repeat; }
   .portfolio-list li {
     float: left; }
   .portfolio-list li:hover .portfolio-content {
