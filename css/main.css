@@ -335,7 +335,8 @@ body {
   -moz-osx-font-smoothing: grayscale; }
 
 h1 {
-  font-size: 3em; }
+  font-size: 3em;
+  font-family: 'Dosis-SemiBold'; }
 
 h2 {
   font-size: 2em; }
@@ -444,7 +445,8 @@ a {
 
 .panel {
   margin: 1em;
-  padding: 12px; }
+  padding: 12px;
+  font-size: 18px; }
 
 .thumbnail {
   max-width: 320px;
@@ -477,7 +479,7 @@ a {
     top: -40px; }
 
 .block {
-  z-index: 50;
+  z-index: 1;
   padding: 0.25em;
   font-size: 1em;
   min-height: 333px; }
@@ -492,7 +494,7 @@ a {
     line-height: 1.225; }
 
 .block-two {
-  color: #bfc0c0;
+  color: #fbfffa;
   background: #4f5d75; }
 
 .block-three {
@@ -527,14 +529,20 @@ a {
     float: left; }
   .portfolio-list li:hover .portfolio-content {
     background-color: rgba(10, 10, 10, 0.767); }
-  .portfolio-list .archilocator:hover .portfolio-content:after {
-    content: "ArchiLocator";
+  .portfolio-list .portfolio-content {
+    display: none; }
+  .portfolio-list .portfolio-item:hover .portfolio-content {
+    display: inline-block;
     line-height: 1.4;
-    font-size: 1.225em;
-    top: 50%;
-    left: 33%;
-    text-align: center;
-    position: relative; }
+    letter-spacing: 1px;
+    font-size: 1.7em;
+    text-align: center; }
+    .portfolio-list .portfolio-item:hover .portfolio-content a {
+      font-weight: bold;
+      color: #00f2e9;
+      position: relative;
+      top: 120px;
+      text-shadow: 2px 2px #140C2A; }
   .portfolio-list .portfolio-item {
     overflow: auto;
     width: 300px;
@@ -543,6 +551,61 @@ a {
     width: inherit;
     height: inherit;
     background-color: rgba(10, 10, 10, 0.12); }
+
+.modalDialog {
+  color: #140C2A;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  opacity: 0;
+  transition: all 400ms ease-in-out;
+  pointer-events: none; }
+  .modalDialog div {
+    width: 640px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #140C2A);
+    background: -webkit-linear-gradient(#fff, #140C2A);
+    background: -o-linear-gradient(#fff, #140C2A); }
+  .modalDialog h3 {
+    font-style: italic;
+    padding: 9px;
+    font-family: 'Dosis-SemiBold'; }
+  .modalDialog p {
+    padding: 9px;
+    color: #fbfffa; }
+
+.modalDialog:target {
+  opacity: 1;
+  pointer-events: auto; }
+
+.close {
+  background: #606061;
+  color: #FFFFFF;
+  line-height: 25px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  top: -10px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-shadow: 1px 1px 3px #000;
+  -webkit-box-shadow: 1px 1px 3px #000;
+  box-shadow: 1px 1px 3px #000; }
+
+.close:hover {
+  background: #00d9ff; }
 
 .hidden-section {
   opacity: 0;
@@ -595,13 +658,13 @@ a {
 footer {
   color: #e3e3e3; }
 
+.contact {
+  font-size: 1.125em; }
+
 .group :after {
   content: "";
   display: table;
   clear: both; }
-
-.contact {
-  font-size: 1.125em; }
 
 #extended-content {
   color: #BFc0c0;
