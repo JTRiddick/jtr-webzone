@@ -396,11 +396,13 @@ a{
 
 #extended-content + .container{
   background-color: $rot;
-  z-index: -1;
+  z-index: 1;
   padding-top: 22px;
 }
 
 .well{
+  pointer-events: all;
+  z-index: 1;
   overflow: auto;
   color:$grau;
   padding: 3px;
@@ -409,14 +411,29 @@ a{
   }
   i:hover{
     background-color: $teel;
+    box-shadow: 3px 3px 3px #333;
+  }
+  .contact{
+    display:inline-block;
+    font-size: 1.667em;
+    position: relative;
+    bottom:25px;
+    padding:2px;
+    overflow: auto;
+    min-height: 33px;
+    a:hover{
+      color:$bluprint;
+      text-shadow: 1px 1px 1px $grau;
+      font-weight: 800;
+      border-bottom:3px solid $wit;
+    }
   }
 }
+
 footer{
   color:$grau;
 }
-.contact{
-  font-size: 1.125em;
-}
+
 .group{
   @include group-clearfix;
 }
