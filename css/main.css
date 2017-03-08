@@ -488,22 +488,16 @@ a {
   font-size: 1em;
   min-height: 333px; }
 
-.block-one {
+.block-one, .block-two, .block-three {
   color: #00f2e9;
   transition: all 0.50s ease-in-out;
-  background-color: #140C2A;
-  box-shadow: 10px 4px 8px #eee; }
-  .block-one .panel-body p {
+  background-color: #140C2A; }
+  .block-one .panel-body p, .block-two .panel-body p, .block-three .panel-body p {
     font-size: 1.2em;
-    line-height: 1.225; }
-
-.block-two {
-  color: #fbfffa;
-  background: #4f5d75; }
+    line-height: 1.625; }
 
 .block-three {
-  color: #fbfffa;
-  background-color: #a0332f; }
+  box-shadow: 6px 16px 22px #4e9ad5; }
 
 .panel-heading > h2 {
   margin-bottom: 6px;
@@ -670,6 +664,11 @@ a {
   padding: 10px 16px;
   border-radius: 6px;
   line-height: 1.42857143; }
+
+#extended-content + .container {
+  background-color: #a0332f;
+  z-index: -1;
+  padding-top: 22px; }
 
 .well {
   overflow: auto;

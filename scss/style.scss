@@ -178,25 +178,20 @@ a{
   font-size: 1em;
   min-height: 333px;
 }
-.block-one {
+.block-one,.block-two,.block-three {
   color:$sBlau;
   transition: all 0.50s ease-in-out;
   background-color: $deepPurp;
-  box-shadow: 10px 4px 8px #eee;
+
   .panel-body p{
     font-size: 1.2em;
-    line-height: 1.225;
+    line-height: 1.625;
   }
 }
-.block-two{
-  color: $wit;
-  background: $grayblau;
-}
 .block-three{
-
-  color:$wit;
-  background-color:$rot
+  box-shadow: 6px 16px 22px $bluprint;
 }
+
 .panel-heading > h2{
   margin-bottom: 6px;
   border-bottom: 2px solid $grau;
@@ -397,6 +392,12 @@ a{
   padding: 10px 16px;
   border-radius: 6px;
   line-height: 1.42857143;
+}
+
+#extended-content + .container{
+  background-color: $rot;
+  z-index: -1;
+  padding-top: 22px;
 }
 
 .well{
