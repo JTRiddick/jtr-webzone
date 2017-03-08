@@ -507,8 +507,7 @@ a {
 
 .panel-heading > h2 {
   margin-bottom: 6px;
-  border-bottom: 2px solid #e3e3e3;
-  padding: 12px; }
+  border-bottom: 2px solid #e3e3e3; }
 
 .row {
   margin-right: -15px;
@@ -676,6 +675,8 @@ a {
   overflow: auto;
   color: #e3e3e3;
   padding: 3px; }
+  .well a {
+    display: inline-block; }
   .well i:hover {
     background-color: #70c1b3; }
 

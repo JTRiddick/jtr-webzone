@@ -200,7 +200,6 @@ a{
 .panel-heading > h2{
   margin-bottom: 6px;
   border-bottom: 2px solid $grau;
-  padding:12px;
 }
 .row{
   margin-right: -15px;
@@ -350,7 +349,9 @@ a{
 	box-shadow: 1px 1px 3px #000;
 }
 
-.close:hover { background: #00d9ff; }
+.close:hover {
+  background: #00d9ff;
+}
 
 .hidden-section{
   opacity: 0;
@@ -402,6 +403,9 @@ a{
   overflow: auto;
   color:$grau;
   padding: 3px;
+  a{
+    display: inline-block;
+  }
   i:hover{
     background-color: $teel;
   }
