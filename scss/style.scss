@@ -7,6 +7,18 @@
 @import url('http://fonts.googleapis.com/css?family=Raleway:700,400,300');
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,300&amp;subset=latin,latin-ext');
 
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+
 body{
   background: $deepPurp;
   font-family: 'Dosis','Raleway','Open Sans',sans-serif;
@@ -477,19 +489,12 @@ footer{
 }
 @media screen and(max-height: 960px){
   .modalDialog{
-    div{
-      max-height: 300px;
-      top:10%;
 
-    }
   }
 }
 
 @media screen and(max-height: 640px){
   .modalDialog{
-    div{
-      max-height: 240px;
-      top:0%;
-    }
+
   }
 }

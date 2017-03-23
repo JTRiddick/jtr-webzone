@@ -327,6 +327,16 @@ textarea {
   font-family: 'Dosis-ExtraBold';
   src: url("../fonts/Dosis/Dosis-ExtraBold.ttf"); }
 
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
 body {
   background: #140C2A;
   font-family: 'Dosis','Raleway','Open Sans',sans-serif;
@@ -724,13 +734,3 @@ div.container.group.block-one ~ div.generic.container.btn {
     max-width: 960px; }
   .page-container {
     max-width: 960px; } }
-
-@media screen and (max-height: 960px) {
-  .modalDialog div {
-    max-height: 300px;
-    top: 10%; } }
-
-@media screen and (max-height: 640px) {
-  .modalDialog div {
-    max-height: 240px;
-    top: 0%; } }
