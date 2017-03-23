@@ -366,11 +366,7 @@ a {
   position: relative;
   width: 100%;
   max-width: 2356px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  margin: 0 auto; }
 
 .blueprint-grid {
   background-color: #4e9ad5;
@@ -390,11 +386,7 @@ a {
   transition: all 0.50s ease-in-out;
   z-index: 5;
   height: 60vw;
-  border-bottom: 3px solid #00f2e9;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  border-bottom: 3px solid #00f2e9; }
   .superheader h1 {
     font-size: 5em;
     font-weight: 700;
@@ -529,25 +521,34 @@ a {
     background-size: cover; }
   .portfolio-list .archilocator:target {
     display: block;
-    width: 960px;
-    height: 720px;
+    max-width: 960px;
+    max-height: 640px;
     background: url(../img/al-screencap-1.jpg) center no-repeat; }
   .portfolio-list .good-taste {
     background: url(../img/blu-boomerang-1.png) center no-repeat #e3e3e3;
     background-size: cover; }
   .portfolio-list .good-taste:target {
     display: block;
-    width: 960px;
-    height: 720px;
+    max-width: 960px;
+    max-height: 640px;
     background: url(../img/blu-boomerang-1.png) center no-repeat; }
   .portfolio-list .wages-of-space {
     background: url(../img/wages-of-space-1.png) center no-repeat #e3e3e3;
     background-size: cover; }
   .portfolio-list .wages-of-space:target {
     display: block;
-    width: 960px;
-    height: 720px;
+    max-width: 960px;
+    max-height: 640px;
     background: url(../img/wages-of-space-1.png) center no-repeat; }
+  .portfolio-list .craig-schumacher {
+    background: url(../img/craig-site-2.png) center no-repeat #e3e3e3;
+    background-size: cover; }
+  .portfolio-list .craig-schumacher:target {
+    display: block;
+    max-width: 960px;
+    max-height: 640px;
+    background: url(../img/craig-site-2.png) center no-repeat;
+    background-size: 66% 66%; }
   .portfolio-list li {
     float: left; }
   .portfolio-list li:hover .portfolio-content {
@@ -583,19 +584,21 @@ a {
   color: #140C2A;
   position: fixed;
   top: 0;
-  right: 0;
-  bottom: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.8);
   z-index: 99999;
   opacity: 0;
   transition: all 400ms ease-in-out;
   pointer-events: none; }
   .modalDialog div {
-    width: 640px;
-    position: relative;
-    top: 25%;
-    transform: translateY(-50%);
+    max-height: 700px;
+    max-width: 640px;
+    position: fixed;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     margin: 10% auto;
     padding: 5px 20px 13px 20px;
     border-radius: 10px;
