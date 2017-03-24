@@ -592,9 +592,10 @@ a {
   opacity: 0;
   transition: all 400ms ease-in-out;
   pointer-events: none; }
-  .modalDialog div {
+  .modalDialog .modal-content {
+    font-size: 18px;
     max-height: 700px;
-    max-width: 640px;
+    max-width: 720px;
     position: fixed;
     top: 33%;
     left: 50%;
@@ -606,6 +607,12 @@ a {
     background: -moz-linear-gradient(#fff, #140C2A);
     background: -webkit-linear-gradient(#fff, #140C2A);
     background: -o-linear-gradient(#fff, #140C2A); }
+    .modalDialog .modal-content img {
+      max-width: 100%; }
+    .modalDialog .modal-content .button {
+      display: inline-block;
+      text-shadow: none;
+      float: right; }
   .modalDialog h3 {
     font-style: italic;
     padding: 9px;
@@ -655,7 +662,7 @@ a {
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: normal;
   text-align: center;
   white-space: nowrap;

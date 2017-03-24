@@ -319,9 +319,10 @@ a{
   transition: all 400ms ease-in-out;
   pointer-events: none;
 
-  div{
+  .modal-content{
+    font-size: 18px;
     max-height: 700px;
-    max-width:640px;
+    max-width:720px;
     position: fixed;
     top: 33%;
     left: 50%;
@@ -333,7 +334,16 @@ a{
     background: -moz-linear-gradient(#fff, $deepPurp);
 	  background: -webkit-linear-gradient(#fff, $deepPurp);
 	  background: -o-linear-gradient(#fff, $deepPurp);
+    img{
+      max-width: 100%;
+    }
+    .button{
+      display: inline-block;
+      text-shadow: none;
+      float:right;
+    }
   }
+
   h3{
     font-style:italic;
     padding:9px;
@@ -391,7 +401,7 @@ a{
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: normal;
   text-align: center;
   white-space: nowrap;
