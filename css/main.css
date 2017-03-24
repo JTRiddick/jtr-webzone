@@ -503,6 +503,7 @@ a {
 
 .panel-heading > h2 {
   margin-bottom: 6px;
+  padding-bottom: 7px;
   border-bottom: 2px solid #e3e3e3; }
 
 .row {
@@ -522,7 +523,7 @@ a {
   .portfolio-list .archilocator:target {
     display: block;
     max-width: 960px;
-    max-height: 640px;
+    max-height: 600px;
     background: url(../img/al-screencap-1.jpg) center no-repeat; }
   .portfolio-list .good-taste {
     background: url(../img/blu-boomerang-1.png) center no-repeat #e3e3e3;
@@ -530,7 +531,7 @@ a {
   .portfolio-list .good-taste:target {
     display: block;
     max-width: 960px;
-    max-height: 640px;
+    max-height: 600px;
     background: url(../img/blu-boomerang-1.png) center no-repeat; }
   .portfolio-list .wages-of-space {
     background: url(../img/wages-of-space-1.png) center no-repeat #e3e3e3;
@@ -538,7 +539,8 @@ a {
   .portfolio-list .wages-of-space:target {
     display: block;
     max-width: 960px;
-    max-height: 640px;
+    max-height: 600px;
+    background-size: 66% 66%;
     background: url(../img/wages-of-space-1.png) center no-repeat; }
   .portfolio-list .craig-schumacher {
     background: url(../img/craig-site-2.png) center no-repeat #e3e3e3;
@@ -546,7 +548,7 @@ a {
   .portfolio-list .craig-schumacher:target {
     display: block;
     max-width: 960px;
-    max-height: 640px;
+    max-height: 600px;
     background: url(../img/craig-site-2.png) center no-repeat;
     background-size: 66% 66%; }
   .portfolio-list li {
@@ -594,14 +596,14 @@ a {
   pointer-events: none; }
   .modalDialog .modal-content {
     font-size: 18px;
-    max-height: 700px;
-    max-width: 720px;
+    max-height: 720px;
+    max-width: 640px;
     position: fixed;
     top: 33%;
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 10% auto;
-    padding: 5px 20px 13px 20px;
+    padding: 5px 20px 5px 20px;
     border-radius: 10px;
     background: #fff;
     background: -moz-linear-gradient(#fff, #140C2A);
@@ -613,6 +615,8 @@ a {
       display: inline-block;
       text-shadow: none;
       float: right; }
+    .modalDialog .modal-content .button:hover {
+      background-color: #70c1b3; }
   .modalDialog h3 {
     font-style: italic;
     padding: 9px;
