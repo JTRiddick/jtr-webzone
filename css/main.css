@@ -563,20 +563,24 @@ a {
     letter-spacing: 1px;
     font-size: 1.7em;
     text-align: center; }
-    .portfolio-list .portfolio-item:hover .portfolio-content a {
+    .portfolio-list .portfolio-item:hover .portfolio-content span {
       font-weight: bold;
       color: #70c1b3;
       position: relative;
       top: 120px;
       text-shadow: 2px 2px #140C2A; }
-    .portfolio-list .portfolio-item:hover .portfolio-content a:hover {
+    .portfolio-list .portfolio-item:hover .portfolio-content span:hover {
       color: #00f2e9; }
-    .portfolio-list .portfolio-item:hover .portfolio-content a:active {
-      color: #a0332f; }
   .portfolio-list .portfolio-item {
     overflow: auto;
     width: 300px;
     height: 300px; }
+    .portfolio-list .portfolio-item a {
+      display: block;
+      height: 100%;
+      width: 100%; }
+    .portfolio-list .portfolio-item a:active .portfolio-content span {
+      color: #a0332f; }
   .portfolio-list .portfolio-content {
     width: inherit;
     height: inherit;

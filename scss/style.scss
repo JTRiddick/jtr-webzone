@@ -282,29 +282,42 @@ a{
     letter-spacing: 1px;
     font-size: 1.7em;
     text-align: center;
-    a{
+    span{
       font-weight: bold;
       color:$teel;
       position: relative;
       top:120px;
       text-shadow: 2px 2px $deepPurp;
     }
-    a:hover{
+    span:hover{
       color:$sBlau;
     }
-    a:active{
-      color:$rot;
-    }
+
   }
   .portfolio-item{
     overflow: auto;
     width: 300px;
     height:300px;
+    a{
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+    a:active{
+      .portfolio-content{
+        span{
+          color:$rot;
+        }
+      }
+    }
+
+
   }
   .portfolio-content{
     width: inherit;
     height:inherit;
     background-color:rgba(10,10,10,0.12);
+
   }
 
 }
