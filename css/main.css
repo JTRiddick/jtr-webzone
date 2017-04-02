@@ -424,6 +424,9 @@ a {
     display: table;
     clear: both; }
 
+.fa-chevron-circle-down {
+  color: #00f2e9; }
+
 .fa-linkedin, .fa-github {
   margin: 6px;
   padding: 6px;
@@ -579,8 +582,8 @@ a {
       display: block;
       height: 100%;
       width: 100%; }
-    .portfolio-list .portfolio-item a:active .portfolio-content span {
-      color: #a0332f; }
+      .portfolio-list .portfolio-item a :active .portfolio-content span {
+        color: #a0332f; }
   .portfolio-list .portfolio-content {
     width: inherit;
     height: inherit;

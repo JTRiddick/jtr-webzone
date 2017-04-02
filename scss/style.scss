@@ -119,6 +119,9 @@ a{
   @include group-clearfix;
   z-index: 1;
 }
+.fa-chevron-circle-down{
+  color:$sBlau;
+}
 
 .fa-linkedin,.fa-github{
   margin:6px;
@@ -302,13 +305,14 @@ a{
       display: block;
       height: 100%;
       width: 100%;
-    }
-    a:active{
-      .portfolio-content{
-        span{
-          color:$rot;
+      :active{
+        .portfolio-content{
+          span{
+            color:$rot;
+          }
         }
-      }
+    }
+
     }
 
 
