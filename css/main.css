@@ -630,7 +630,8 @@ a {
     font-family: 'Dosis-SemiBold'; }
   .modalDialog p {
     padding: 9px;
-    color: #fbfffa; }
+    color: #fbfffa;
+    display: inline-block; }
 
 .modalDialog:target {
   opacity: 1;
