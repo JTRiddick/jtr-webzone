@@ -503,6 +503,8 @@ a {
 
 .block-three {
   box-shadow: 6px 16px 22px #4e9ad5; }
+  .block-three .col-third {
+    text-align: center; }
 
 .panel-heading > h2 {
   margin-bottom: 6px;
@@ -631,7 +633,7 @@ a {
   .modalDialog p {
     padding: 9px;
     color: #fbfffa;
-    display: inline-block; }
+    display: inline; }
 
 .modalDialog:target {
   opacity: 1;
@@ -704,6 +706,11 @@ a {
   z-index: 1;
   padding-top: 22px; }
 
+#contact {
+  background-color: #a0332f;
+  z-index: 10;
+  padding-top: 22px; }
+
 .well {
   pointer-events: all;
   z-index: 1;
@@ -717,7 +724,7 @@ a {
     box-shadow: 3px 3px 3px #333; }
   .well .contact {
     display: inline-block;
-    font-size: 1.667em;
+    font-size: 1.325em;
     position: relative;
     bottom: 25px;
     padding: 2px;
@@ -730,7 +737,9 @@ a {
       border-bottom: 3px solid #fbfffa; }
 
 footer {
-  color: #e3e3e3; }
+  color: #e3e3e3;
+  margin-top: 1em;
+  background-color: #140C2A; }
 
 .group :after {
   content: "";
@@ -749,7 +758,15 @@ div.container.group.block-one ~ div.generic.container.btn {
   .container {
     max-width: 640px; }
   .page-container {
-    max-width: 750px; } }
+    max-width: 750px; }
+  .row .col-third {
+    float: none;
+    clear: both;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0; }
+  .well a {
+    font-size: 0.8em; } }
 
 @media screen and (max-width: 960px) {
   .container {

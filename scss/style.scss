@@ -204,6 +204,10 @@ a{
 }
 .block-three{
   box-shadow: 6px 16px 22px $bluprint;
+
+  .col-third{
+    text-align: center;
+  }
 }
 
 .panel-heading > h2{
@@ -221,8 +225,9 @@ a{
     float: left;
     width: 33.33333333%;
   }
-
 }
+
+
 
 .portfolio-list{
   overflow: auto;
@@ -376,7 +381,7 @@ a{
   p{
     padding:9px;
     color:$wit;
-    display: inline-block;
+    display: inline;
   }
 
 }
@@ -460,6 +465,12 @@ a{
   z-index: 1;
   padding-top: 22px;
 }
+#contact{
+  background-color: $rot;
+  z-index: 10;
+  padding-top: 22px;
+}
+
 
 .well{
   pointer-events: all;
@@ -476,7 +487,7 @@ a{
   }
   .contact{
     display:inline-block;
-    font-size: 1.667em;
+    font-size: 1.325em;
     position: relative;
     bottom:25px;
     padding:2px;
@@ -493,6 +504,8 @@ a{
 
 footer{
   color:$grau;
+  margin-top: 1em;
+  background-color: $deepPurp;
 }
 
 .group{
@@ -522,6 +535,16 @@ footer{
   }
   .page-container{
     max-width: 750px;
+  }
+  .row .col-third{
+    float: none;
+    clear: both;
+    width: 100%;
+    margin: 0 auto;
+    padding:0;
+  }
+  .well a {
+    font-size: 0.8em;
   }
 }
 
