@@ -9,7 +9,13 @@
     "gatsby-plugin-postcss-sass": "^1.0.13",
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-plugin-sass": "^1.0.13",
-    "react-fontawesome": "^1.6.1"
+    "gatsby-remark-copy-linked-files": "^1.5.22",
+    "gatsby-remark-images": "^1.5.33",
+    "gatsby-source-filesystem": "^1.5.9",
+    "gatsby-transformer-remark": "^1.7.23",
+    "gatsby-transformer-sharp": "^1.6.15",
+    "react-fontawesome": "^1.6.1",
+    "react-scrollchor": "^4.0.0"
   },
   "keywords": [
     "gatsby"

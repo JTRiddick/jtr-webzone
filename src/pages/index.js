@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'gatsby-link';
 
 import FontAwesome from 'react-fontawesome';
-import '../sass/style.scss';
+import '../assets/scss/style.scss';
 
 
 const IndexPage = () => {

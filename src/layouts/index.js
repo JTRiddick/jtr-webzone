@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 
 import './index.css'
-import '../sass/style.scss';
+import '../assets/scss/style.scss';
 
 
 const Header = () => (
