@@ -14,7 +14,9 @@
     "gatsby-source-filesystem": "^1.5.9",
     "gatsby-transformer-remark": "^1.7.23",
     "gatsby-transformer-sharp": "^1.6.15",
+    "prop-types": "^15.6.0",
     "react-fontawesome": "^1.6.1",
+    "react-modal": "^3.1.7",
     "react-scrollchor": "^4.0.0"
   },
   "keywords": [

@@ -1,39 +1,16 @@
 import React from 'react';
 import Link from 'gatsby-link';
 
-import FontAwesome from 'react-fontawesome';
+import Portfolio from '../components/Portfolio.js';
+
+
 import '../assets/scss/style.scss';
 
 
 const IndexPage = () => {
   return(
-  <div>
+
     <main className="page-container">
-      <nav className="navbar">
-
-      </nav>
-      {/* <!-- Main jumbotron--> */}
-      <header className="superheader super-fill centered vaporwave-road">
-        <div className='container'>
-          <h1>Jordan Taylor Riddick</h1>
-        </div>
-        <div className="container">
-          <h2>UI/UX . Front-End Dev</h2>
-          <p><span>How's it going?</span></p>
-          <p><span>You don't have to answer.</span></p>
-        </div>
-        <div className="container">
-
-          <a href="#who">
-              {/* <i className="fa fa-chevron-circle-down fa-5x"></i> */}
-              <FontAwesome name='chevron-circle-down'
-                size='5x'
-              />
-          </a>
-
-        </div>
-      </header>
-
       <section className= "container group block block-one" >
 
         <div className="panel panel-default" id="who">
@@ -52,6 +29,10 @@ const IndexPage = () => {
             </p>
           </div>
         </div>
+      </section>
+
+      <section className= "container group block block-two">
+        <Portfolio />
       </section>
 
       <section className= "container group block block-three">
@@ -112,8 +93,6 @@ const IndexPage = () => {
       </section>
 
     </main>
-
-
-  </div>)
+  )
 }
 export default IndexPage;
