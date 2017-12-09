@@ -56,7 +56,6 @@ a{
 
 .blueprint-grid{
   background-color: $bluprint;
-  background:url(../../images/rob-bye-182304.jpg) center no-repeat;
   background-size:133%;
 }
 .vaporwave-road{
@@ -242,48 +241,6 @@ a{
 .portfolio-list{
   overflow: auto;
 
-  .archilocator{
-    background:url(../../images/al-screencap-1.jpg) center no-repeat $grau;
-    background-size:cover;
-  }
-  .archilocator:target{
-    display: block;
-    max-width: 960px;
-    max-height:600px;
-    background:url(../../images/al-screencap-1.jpg) center no-repeat;
-  }
-  .good-taste{
-    background:url(../../images/blu-boomerang-1.png) center no-repeat $grau;
-    background-size:cover;
-  }
-  .good-taste:target{
-    display: block;
-    max-width: 960px;
-    max-height: 600px;
-    background:url(../../images/blu-boomerang-1.png) center no-repeat;
-  }
-  .wages-of-space{
-    background:url(../../images/wages-of-space-1.png) center no-repeat $grau;
-    background-size:cover;
-  }
-  .wages-of-space:target{
-    display: block;
-    max-width: 960px;
-    max-height: 600px;
-    background-size:66% 66%;
-    background:url(../../images/wages-of-space-1.png) center no-repeat;
-  }
-  .craig-schumacher{
-    background:url(../../images/craig-site-2.png) center no-repeat $grau;
-    background-size:cover;
-  }
-  .craig-schumacher:target{
-    display: block;
-    max-width: 960px;
-    max-height: 600px;
-    background:url(../../images/craig-site-2.png) center no-repeat;
-    background-size:66% 66%;
-  }
   li{
     float:left;
   }

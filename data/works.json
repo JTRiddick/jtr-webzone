@@ -1,26 +1,20 @@
 [
   {
-    "id":1,
+    "id":"1",
     "title": "Portfolio Piece",
-    "thumbnail":"./images/craig-site-2.png",
-    "text":"This explains What This Is",
-    "image": "",
-    "background":"archilocator"
+    "image":"data/images/archilocator.jpg",
+    "text":"This explains What This Is"
   },
   {
-    "id":2,
+    "id":"2",
     "title": "Portfolio Piece",
-    "thumbnail":"./images/craig-site-2.png",
-    "text":"This explains What This Is",
-    "image": "",
-    "background":"wages-of-space"
+    "image":"data/images/wagesofspace.png",
+    "text":"This explains What This Is"
   },
   {
-    "id":3,
+    "id":"3",
     "title":"Portfolio Piece",
-    "thumbnail":"./images/blu-boomerang-1.png",
-    "text":"This explains what this is",
-    "image":"",
-    "background":"craig-schumacher"
+    "image":"data/images/craigsiteA.png",
+    "text":"This explains what this is"
   }
 ]

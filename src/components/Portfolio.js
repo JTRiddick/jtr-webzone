@@ -12,6 +12,7 @@ class Portfolio extends React.Component{
 
   render(){
     console.log('portfolio component props @ render: ', this.props);
+    console.log('image sharp?? ',this.props.items[0].image.imageSharp)
     return (
       <div>
         <h2>Important Works</h2>
@@ -26,12 +27,7 @@ class Portfolio extends React.Component{
           {this.props.items.map(piece => {
             return (<div key={piece.id}>
               {piece.title} + {piece.id}
-              <div className={`${piece.background } portfolio-item`}
-                style={{
-                  padding:`2px`,
-                  height:`300px`,
-                  width:`300px,`
-                }}></div>
+              <img src={piece.image} className={`portfolio-item`} />
               <p>{piece.text}</p>
             </div>)
           })}
