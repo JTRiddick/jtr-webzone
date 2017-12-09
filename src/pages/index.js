@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'gatsby-link';
 
 import Portfolio from '../components/Portfolio.js';
+import works from '../../data/works.json';
 
 
 import '../assets/scss/style.scss';
@@ -32,7 +33,7 @@ const IndexPage = () => {
       </section>
 
       <section className= "container group block block-two">
-        <Portfolio />
+        <Portfolio items={works}/>
       </section>
 
       <section className= "container group block block-three">

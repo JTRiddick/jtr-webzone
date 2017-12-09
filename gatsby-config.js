@@ -1,3 +1,5 @@
+const path = require(`path`)
+
 module.exports = {
   siteMetadata: {
     title: `JTRiddick Portfolio Page`,
@@ -6,6 +8,13 @@ module.exports = {
   },
   pathPrefix: '/',
   plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: path.join(__dirname, `data`),
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -34,8 +43,8 @@ module.exports = {
         ],
       },
     },
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`
   ],
