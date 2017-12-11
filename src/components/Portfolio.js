@@ -3,6 +3,8 @@ import * as PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 
+import PortfolioItem from './PortfolioItem'
+
 import '../assets/scss/style.scss';
 
 class Portfolio extends React.Component{
@@ -12,7 +14,6 @@ class Portfolio extends React.Component{
 
   render(){
     console.log('portfolio component props @ render: ', this.props);
-    console.log('image sharp?? ',this.props.items[0].image.imageSharp)
     return (
       <div>
         <h2>Important Works</h2>
@@ -24,10 +25,10 @@ class Portfolio extends React.Component{
             paddingBottom:`7px`,
           }}
           className="portfolio-list">
-          {this.props.items.map(piece => {
+          {this.props.data.map(piece => {
             return (<div key={piece.id}>
               {piece.title} + {piece.id}
-              <img src={piece.image} className={`portfolio-item`} />
+              <PortfolioItem data={this.props.data} id={piece.id} className={`portfolio-item`} />
               <p>{piece.text}</p>
             </div>)
           })}

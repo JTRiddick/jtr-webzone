@@ -5,21 +5,26 @@
   "author": "JTR <riddick.taylor@gmail.com>",
   "dependencies": {
     "gatsby": "^1.9.115",
+    "gatsby-image": "^1.0.28",
     "gatsby-link": "^1.6.28",
+    "gatsby-plugin-glamor": "^1.6.10",
     "gatsby-plugin-google-analytics": "^1.0.13",
     "gatsby-plugin-postcss-sass": "^1.0.13",
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-plugin-sass": "^1.0.13",
+    "gatsby-plugin-typography": "^1.7.10",
     "gatsby-remark-copy-linked-files": "^1.5.22",
     "gatsby-remark-images": "^1.5.33",
     "gatsby-source-filesystem": "^1.5.9",
     "gatsby-transformer-json": "^1.0.13",
     "gatsby-transformer-remark": "^1.7.23",
     "gatsby-transformer-sharp": "^1.6.15",
+    "glamorous": "^4.11.0",
     "prop-types": "^15.6.0",
     "react-fontawesome": "^1.6.1",
     "react-modal": "^3.1.7",
-    "react-scrollchor": "^4.0.0"
+    "react-scrollchor": "^4.0.0",
+    "typography-theme-kirkham": "^0.16.3"
   },
   "keywords": [
     "gatsby"

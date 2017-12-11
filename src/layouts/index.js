@@ -35,7 +35,7 @@ const Header = () => (
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="JTRiddick.github.io"
+      title="JTRiddick"
       meta={[
         { name: 'description', content: 'Jordan Taylor Riddick, developer designer' },
         { name: 'keywords', content: 'Riddick, developer, designer, javascript, react, node' },

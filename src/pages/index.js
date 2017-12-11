@@ -33,7 +33,7 @@ const IndexPage = () => {
       </section>
 
       <section className= "container group block block-two">
-        <Portfolio items={works}/>
+        <Portfolio data={works}/>
       </section>
 
       <section className= "container group block block-three">
