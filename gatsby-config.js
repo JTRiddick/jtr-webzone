@@ -6,7 +6,7 @@ module.exports = {
     author: `Jordan Taylor Riddick`,
     description: "JT Riddick front end react web developer"
   },
-  pathPrefix: '/',
+  // pathPrefix: '\\',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -18,7 +18,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/posts`,
+        path: `${__dirname}\\src\\posts`,
         name: "posts",
       },
     },
@@ -26,7 +26,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}\\src\\images`,
       },
     },
     {
