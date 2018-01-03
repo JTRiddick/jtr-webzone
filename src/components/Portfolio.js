@@ -5,6 +5,7 @@ import Helmet from 'react-helmet';
 
 import PortfolioItem from './PortfolioItem'
 
+
 import '../assets/scss/style.scss';
 
 class Portfolio extends React.Component{
@@ -13,8 +14,7 @@ class Portfolio extends React.Component{
   }
 
   componentDidMount(){
-    let data = this.props.data
-    console.log('graphql? ',{...data.edges})
+    console.log('component did mount ', this);
   }
 
   render(){
@@ -32,9 +32,7 @@ class Portfolio extends React.Component{
           className="portfolio-list">
           {this.props.data.map(piece => {
             return (<div key={piece.set}>
-              {piece.title} + {piece.set}
-              <PortfolioItem data={this.props.data} id={piece.set} className={`portfolio-item`} />
-              <p>{piece.text}</p>
+              <PortfolioItem piece={this.props.data[`${piece.set-1}`]} id={piece.set} className={`portfolio-item`} />
             </div>)
           })}
 
@@ -47,7 +45,7 @@ class Portfolio extends React.Component{
 export default Portfolio;
 
 export const query = graphql`
-  query MyFilesQuery {
+  query AllImagesQuery {
     allImageSharp {
       edges {
         node {
