@@ -12,6 +12,11 @@ class Portfolio extends React.Component{
     super(props);
   }
 
+  componentDidMount(){
+    let data = this.props.data
+    console.log('graphql? ',{...data.edges})
+  }
+
   render(){
     console.log('portfolio component props @ render: ', this.props);
     return (
@@ -26,9 +31,9 @@ class Portfolio extends React.Component{
           }}
           className="portfolio-list">
           {this.props.data.map(piece => {
-            return (<div key={piece.id}>
-              {piece.title} + {piece.id}
-              <PortfolioItem data={this.props.data} id={piece.id} className={`portfolio-item`} />
+            return (<div key={piece.set}>
+              {piece.title} + {piece.set}
+              <PortfolioItem data={this.props.data} id={piece.set} className={`portfolio-item`} />
               <p>{piece.text}</p>
             </div>)
           })}
@@ -40,3 +45,15 @@ class Portfolio extends React.Component{
 }
 
 export default Portfolio;
+
+export const query = graphql`
+  query MyFilesQuery {
+    allImageSharp {
+      edges {
+        node {
+          id
+        }
+      }
+    }
+  }
+`;

@@ -1,18 +1,18 @@
 [
   {
-    "id":"1",
+    "set":"1",
     "title": "Portfolio Piece",
     "image":"data/images/archilocator.jpg",
     "text":"This explains What This Is"
   },
   {
-    "id":"2",
+    "set":"2",
     "title": "Portfolio Piece",
     "image":"data/images/wagesofspace.png",
     "text":"This explains What This Is"
   },
   {
-    "id":"3",
+    "set":"3",
     "title":"Portfolio Piece",
     "image":"data/images/craigsiteA.png",
     "text":"This explains what this is"
