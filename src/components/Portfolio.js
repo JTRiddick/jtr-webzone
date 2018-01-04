@@ -8,48 +8,55 @@ import PortfolioItem from './PortfolioItem'
 
 import '../assets/scss/style.scss';
 
-class Portfolio extends React.Component{
-  constructor(props){
-    super(props);
-  }
+const Portfolio = ({data}) => {
 
-  componentDidMount(){
-    console.log('component did mount ', this);
-  }
+  return (
+    <div>
+      {console.log(data.AllImagesQuery)}
+      <h2>Important Works</h2>
+      <div
+        style={{
+          margin: `0 auto`,
+          border: `2px solid rgba(227, 227, 227, 1)`,
+          marginBottom: `6px`,
+          paddingBottom:`7px`,
+        }}
+        className="portfolio-list">
+        {data.map(piece => {
+          return (<div key={piece.set}>
+            <PortfolioItem piece={data[`${piece.set-1}`]}
+               src={piece.image}
+               className={`portfolio-item`}
+            />
+          </div>)
+        })}
 
-  render(){
-    console.log('portfolio component props @ render: ', this.props);
-    return (
-      <div>
-        <h2>Important Works</h2>
-        <div
-          style={{
-            margin: `0 auto`,
-            border: `2px solid rgba(227, 227, 227, 1)`,
-            marginBottom: `6px`,
-            paddingBottom:`7px`,
-          }}
-          className="portfolio-list">
-          {this.props.data.map(piece => {
-            return (<div key={piece.set}>
-              <PortfolioItem piece={this.props.data[`${piece.set-1}`]} id={piece.set} className={`portfolio-item`} />
-            </div>)
-          })}
-
-        </div>
       </div>
-    )
-  }
+    </div>
+  )
+
 }
 
 export default Portfolio;
 
-export const query = graphql`
+export const pageQuery = graphql`
   query AllImagesQuery {
     allImageSharp {
       edges {
         node {
           id
+          resolutions{
+           base64
+           tracedSVG
+           aspectRatio
+           width
+           height
+           src
+           srcSet
+           srcWebp
+           srcSetWebp
+           originalName
+          }
         }
       }
     }

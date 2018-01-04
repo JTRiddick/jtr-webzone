@@ -6,7 +6,7 @@ module.exports = {
     author: `Jordan Taylor Riddick`,
     description: "JT Riddick front end react web developer"
   },
-  // pathPrefix: '/',
+  pathPrefix: '/',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,

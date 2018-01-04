@@ -6,27 +6,13 @@ import Img from "gatsby-image";
 
 import '../assets/scss/style.scss';
 
-const PortfolioItem = ({piece,id}) => (
+const PortfolioItem = ({piece,src,data}) => (
   <div
     style={{backgroundColor:`gray`}}>
-    {console.log(piece.file[`${piece.image}`])}
-    <p>{piece.text} + {id}</p>
+    <p>{piece.text} + {piece.id}</p>
     {/* <Img sizes={data.file.childImageSharp}/> */}
 
   </div>
 );
 
 export default PortfolioItem;
-
-export const query = graphql`
-
- query PortfolioImageQuery($path: String!) {
-   file(relativePath: { eq: $path}){
-   childImageSharp {
-     sizes(maxWidth: 1500) {
-       ...GatsbyImageSharpSizes
-     }
-    }
-  }
-}
-`;
