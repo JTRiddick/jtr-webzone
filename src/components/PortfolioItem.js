@@ -6,13 +6,14 @@ import Img from "gatsby-image";
 
 import '../assets/scss/style.scss';
 
-const PortfolioItem = ({piece,src,data}) => (
+const PortfolioItem = ({piece}) => {
+  console.log('PortfolioItem ', piece);
+  return(
   <div
     style={{backgroundColor:`gray`}}>
-    <p>{piece.text} + {piece.id}</p>
-    {/* <Img sizes={data.file.childImageSharp}/> */}
+
 
   </div>
-);
+)};
 
 export default PortfolioItem;

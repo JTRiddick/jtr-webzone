@@ -2,13 +2,14 @@ import React from 'react';
 import Link from 'gatsby-link';
 
 import Portfolio from '../components/Portfolio.js';
-import works from '../../data/works.json';
+
 
 
 import '../assets/scss/style.scss';
 
 
-const IndexPage = () => {
+export default ({data}) => {
+  console.log('data ', data);
   return(
 
     <main className="page-container">
@@ -33,7 +34,7 @@ const IndexPage = () => {
       </section>
 
       <section className= "container group block block-two">
-        <Portfolio data={works}/>
+        <Portfolio works={data.allWorksJson.edges}/>
       </section>
 
       <section className= "container group block block-three">
@@ -96,4 +97,21 @@ const IndexPage = () => {
     </main>
   )
 }
-export default IndexPage;
+// export default IndexPage;
+
+
+export const pageQuery = graphql`
+  query portfolioQuery {
+    allWorksJson{
+      edges{
+        node{
+          id
+          set
+          image
+          title
+          text
+        }
+      }
+    }
+  }
+`;

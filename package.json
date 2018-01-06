@@ -1,6 +1,6 @@
 {
-  "name": "jtr-githubpage",
-  "description": "Gatsby default starter",
+  "name": "jtr-webzone",
+  "description": "JTR Personal Website",
   "version": "1.0.0",
   "author": "JTR <riddick.taylor@gmail.com>",
   "dependencies": {
