@@ -34,7 +34,8 @@ export default ({data}) => {
       </section>
 
       <section className= "container group block block-two">
-        <Portfolio works={data.allWorksJson.edges}/>
+        <Portfolio works={data.allWorksJson.edges}
+        images={data.allImageSharp.edges}/>
       </section>
 
       <section className= "container group block block-three">
@@ -110,6 +111,25 @@ export const pageQuery = graphql`
           image
           title
           text
+        }
+      }
+    }
+    allImageSharp {
+      edges {
+        node {
+          id
+          resolutions {
+            base64
+            tracedSVG
+            aspectRatio
+            width
+            height
+            src
+            srcSet
+            srcWebp
+            srcSetWebp
+            originalName
+          }
         }
       }
     }
