@@ -24,12 +24,13 @@ class Portfolio extends React.Component{
     works.map(piece => {
       let img = {};
       images.map((image, i) => {
-        if (image.node.resolutions.originalName.match(piece.image)){
-          //
+        console.log('image map ', image, i, piece);
+        if (image.node.resolutions.originalName === piece.node.image){
           img = image.node
+          Object.assign(piece.node,img)
         }
       })
-      Object.assign(piece.node,img)
+
       return works
     })
 

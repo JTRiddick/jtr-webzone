@@ -14,6 +14,7 @@ const PortfolioItem = ({piece}) => {
   <div
     style={{backgroundColor:`gray`}}>
     <h3>{item.title}</h3>
+    <Img resolutions={resolutions}/>
     <p>{`${item.set} ${item.text}`}</p>
   </div>
 )};
