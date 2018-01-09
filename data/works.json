@@ -2,19 +2,19 @@
   {
     "set":"1",
     "title": "Portfolio Piece",
-    "image":"data/images/archilocator.jpg",
+    "image":"archilocator.jpg",
     "text":"This explains What This Is"
   },
   {
     "set":"2",
     "title": "Portfolio Piece",
-    "image":"data/images/wagesofspace.png",
+    "image":"wagesofspace.png",
     "text":"This explains What This Is"
   },
   {
     "set":"3",
     "title":"Portfolio Piece",
-    "image":"data/images/craigsiteA.png",
+    "image":"craigsiteA.png",
     "text":"This explains what this is"
   }
 ]

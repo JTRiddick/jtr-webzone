@@ -13,13 +13,28 @@ class Portfolio extends React.Component{
     super(props);
   }
 
-  componentDidMount(){
+  componentWillMount(){
     console.log('component did mount ', this);
+
   }
 
   render(){
     const works = this.props.works;
+    const images = this.props.images;
+    works.map(piece => {
+      let img = {};
+      images.map((image, i) => {
+        if (image.node.resolutions.originalName.match(piece.image)){
+          //
+          img = image.node
+        }
+      })
+      Object.assign(piece.node,img)
+      return works
+    })
+
     console.log('portfolio component props @ render: ', this.props);
+    console.log('works object :', works )
     return (
       <div>
         <h2>Important Works</h2>
@@ -35,7 +50,6 @@ class Portfolio extends React.Component{
             console.log('piece is ', piece.node);
             return (<div key={piece.node.set}>
               <PortfolioItem piece={works[`${piece.node.set-1}`]}
-                 src={piece.node.image}
                  className={`portfolio-item`}
               />
             </div>)
