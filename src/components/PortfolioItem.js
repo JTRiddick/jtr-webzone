@@ -11,12 +11,17 @@ const PortfolioItem = ({piece}) => {
   const item = piece.node;
   const resolutions = item.resolutions;
   return(
-  <div
+  <li
+    className={`portfolio-item`}
     style={{backgroundColor:`gray`}}>
-    <h3>{item.title}</h3>
-    <Img resolutions={resolutions}/>
-    <p>{`${item.set} ${item.text}`}</p>
-  </div>
+    <h4><span>{item.title}</span></h4>
+
+    <a>
+      <Img resolutions={resolutions} className={'thumbnail'}/>
+    </a>
+
+    <p className={`portfolio-content`}>{`${item.text}`}</p>
+  </li>
 )};
 
 export default PortfolioItem;

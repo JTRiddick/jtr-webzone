@@ -1,20 +1,30 @@
 [
   {
     "set":"1",
-    "title": "Portfolio Piece",
+    "title": "Archilocator",
+    "subtitle":"Finding Interesting Architecture Near You",
     "image":"archilocator.jpg",
     "text":"This explains What This Is"
   },
   {
     "set":"2",
-    "title": "Portfolio Piece",
+    "title": "The Wages of Space",
+    "subtitle":"Unity Engine Lunar Lander Clone",
     "image":"wagesofspace.png",
     "text":"This explains What This Is"
   },
   {
     "set":"3",
-    "title":"Portfolio Piece",
+    "title":"Craig Schumacher",
     "image":"craigsiteA.png",
-    "text":"This explains what this is"
+    "subtitle":"A Portfolio of a DFW Area Artist",
+    "text":"HTML/JQuery site with Isotope/Masonry"
+  },
+  {
+    "set":"4",
+    "title":"Blue Boomerang",
+    "subtitle":"A Game Built for Ludum Dare 33",
+    "image":"blueboomerang.png",
+    "text":"Top down stealth game in the Unity Engine"
   }
 ]

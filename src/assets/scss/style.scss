@@ -240,60 +240,28 @@ a{
 
 .portfolio-list{
   overflow: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 1em auto;
 
-  li{
-    float:left;
-  }
-  li:hover .portfolio-content{
-    background-color:rgba(10,10,10,0.767);
-  }
-  .portfolio-content{
-    display: none;
-
-  }
-  .portfolio-item:hover .portfolio-content{
-    display: inline-block;
-    line-height: 1.4;
-    letter-spacing: 1px;
-    font-size: 1.7em;
-    text-align: center;
-    span{
-      font-weight: bold;
-      color:$teel;
-      position: relative;
-      top:120px;
-      text-shadow: 2px 2px $deepPurp;
-    }
-    span:hover{
-      color:$sBlau;
-    }
-
-  }
   .portfolio-item{
-    overflow: auto;
-    width: 300px;
-    height:300px;
-    a{
-      display: block;
-      height: 100%;
-      width: 100%;
-      :active{
-        .portfolio-content{
-          span{
-            color:$rot;
-          }
-        }
+    decoration:none;
+    list-style:none;
+    li{
+     span{
+       padding: 4px 0 4px 0;
+     }
     }
+    li:hover .portfolio-content{
+      background-color:rgba(10,10,10,0.767);
+    }
+    .portfolio-content{
+      width: inherit;
+      height:inherit;
+      background-color:rgba(10,10,10,0.12);
 
     }
-
-
-  }
-  .portfolio-content{
-    width: inherit;
-    height:inherit;
-    background-color:rgba(10,10,10,0.12);
-
   }
 
 }
