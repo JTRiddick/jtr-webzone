@@ -204,6 +204,7 @@ a{
 }
 .block-three{
   box-shadow: 6px 16px 22px $bluprint;
+  z-index: -1;
 
   .col-third{
     text-align: center;
@@ -281,7 +282,7 @@ a{
   .modal-content{
     font-size: 18px;
     max-height: 720px;
-    max-width:640px;
+    max-width:960px;
     position: fixed;
     top: 33%;
     left: 50%;
@@ -295,16 +296,16 @@ a{
 	  background: -o-linear-gradient(#fff, $deepPurp);
 
     img{
-      max-width: 100%;
-
+      max-width: 80%;
     }
     .button{
       display: inline-block;
       text-shadow: none;
       float:right;
+      pointer-events: auto;
     }
     .button:hover{
-      background-color: $teel;
+      background-color: $rot;
     }
   }
 

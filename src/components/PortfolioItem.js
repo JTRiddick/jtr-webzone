@@ -39,18 +39,24 @@ class PortfolioItem extends React.Component {
   }
 
   render(){
-    console.log('portfolio item props at render: ', this.props);
-    console.log('modal on? ', this.state.showModal);
+    // console.log('portfolio item props at render: ', this.props);
+    // console.log('modal on? ', this.state.showModal);
     let item = this.state.item;
     let resolutions = this.state.resolutions;
     let modal = (<div className={`modal`}>
       <div className={`modal-content`}>
-      <Img resolutions={resolutions} />
-      <p>
-        {item.text}
-      </p>
+        <div
+          onClick={this.handleClick}
+          className={'button'}>X
+        </div>
+        <h3><span>{item.title}</span></h3>
+        <Img resolutions={resolutions} />
+        <p>
+          {item.text}
+        </p>
       </div>
     </div>);
+
     const displayItem = (
       <div
         className={`portfolio-item`}
@@ -65,6 +71,7 @@ class PortfolioItem extends React.Component {
 
         <p className={`portfolio-content`}>{`${item.subtitle}`}</p>
       </div>)
+
     return(
       <div>
         {displayItem ? displayItem : ""}
