@@ -41,7 +41,6 @@ class Portfolio extends React.Component{
         <h2>Important Works</h2>
         <div
           style={{
-            margin: `0 auto`,
             border: `2px solid rgba(227, 227, 227, 1)`,
             marginBottom: `6px`,
             paddingBottom:`7px`,

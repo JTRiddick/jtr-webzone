@@ -110,6 +110,7 @@ export const pageQuery = graphql`
           set
           image
           title
+          subtitle
           text
         }
       }
