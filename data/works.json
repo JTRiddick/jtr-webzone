@@ -1,30 +1,29 @@
-[
-  {
-    "set":"1",
-    "title": "Archilocator",
-    "subtitle":"Finding Interesting Architecture Near You",
-    "image":"archilocator.jpg",
-    "text":"This explains What This Is"
-  },
-  {
-    "set":"2",
-    "title": "The Wages of Space",
-    "subtitle":"Unity Engine Lunar Lander Clone",
-    "image":"wagesofspace.png",
-    "text":"This explains What This Is"
-  },
-  {
-    "set":"3",
-    "title":"Craig Schumacher",
-    "image":"craigsiteA.png",
-    "subtitle":"A Portfolio of a DFW Area Artist",
-    "text":"HTML/JQuery site with Isotope/Masonry"
-  },
-  {
-    "set":"4",
-    "title":"Blue Boomerang",
-    "subtitle":"A Game Built for Ludum Dare 33",
-    "image":"blueboomerang.png",
-    "text":"Top down stealth game in the Unity Engine"
-  }
+[{
+        "set": "1",
+        "title": "Archilocator",
+        "subtitle": "Finding Interesting Architecture Near You",
+        "image": "archilocator.jpg",
+        "text": "A web application for categorizing specific types and styles of architecture using a React front-end with Google Maps API integration tied to REST endpoints from a Mongo Database."
+    },
+    {
+        "set": "2",
+        "title": "The Wages of Space",
+        "subtitle": "Unity Engine Lunar Lander Clone",
+        "image": "wagesofspace.png",
+        "text": "A 2D game using Unity's built in physics where a player tries to ferry passengers while balancing fuel and maintenance"
+    },
+    {
+        "set": "3",
+        "title": "Craig Schumacher",
+        "image": "craigsiteA.png",
+        "subtitle": "A Portfolio of a DFW Area Artist",
+        "text": "HTML/JQuery site with Isotope/Masonry"
+    },
+    {
+        "set": "4",
+        "title": "Blue Boomerang",
+        "subtitle": "A Game Built for Ludum Dare 33",
+        "image": "blueboomerang.png",
+        "text": "Top down stealth game in the Unity Engine with pathfinding and artificial intelligence. Built in 72 hours for the Ludum Dare game Jam"
+    }
 ]
