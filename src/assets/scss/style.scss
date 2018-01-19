@@ -89,6 +89,7 @@ a{
 
   .container{
     margin:1% 20% 0 20%;
+
   }
   :nth-child(2){
     max-width: 48%;
@@ -195,12 +196,17 @@ a{
 .block-one,.block-two,.block-three {
   color:$sBlau;
   transition: all 0.50s ease-in-out;
-  background-color: $deepPurp;
 
   .panel-body p{
     font-size: 1.2em;
     line-height: 1.625;
   }
+}
+.block-two{
+  .portfolio-list{
+    background-color: gray;
+  }
+
 }
 .block-three{
   box-shadow: 6px 16px 22px $bluprint;
@@ -244,23 +250,28 @@ a{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-around;
   margin: 1em auto;
+  border: 2px solid rgba(227, 227, 227, 1);
 
   .portfolio-item{
-    decoration:none;
-    list-style:none;
-    div{
-     span{
-       padding: 4px 0 4px 0;
-     }
-    }
+
+   span{
+     display: inline-block;
+     width: 100%;
+     padding: 6px 0 4px 0;
+     background-color: $portfolioBgDark;
+     font-size: 1.25em;
+     text-align: left;
+   }
+
     div:hover .portfolio-content{
-      background-color:rgba(10,10,10,0.767);
+      background-color:$teel;
     }
     .portfolio-content{
       width: inherit;
       height:inherit;
-      background-color:rgba(10,10,10,0.12);
+      background-color:$portfolioBgDark;
 
     }
   }

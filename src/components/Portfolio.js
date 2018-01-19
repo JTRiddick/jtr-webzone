@@ -41,9 +41,7 @@ class Portfolio extends React.Component{
         <h2>Important Works</h2>
         <div
           style={{
-            border: `2px solid rgba(227, 227, 227, 1)`,
-            marginBottom: `6px`,
-            paddingBottom:`7px`,
+            
           }}
           className="portfolio-list">
           {works.map(piece => {
