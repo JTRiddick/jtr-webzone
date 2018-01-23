@@ -16,7 +16,7 @@ const Header = () => (
     </div>
     <div className="container">
       <h2>UI/UX . Front-End Dev</h2>
-      <p><span>How's it going?</span></p>
+      <p><i>How's it going?</i></p>
       <p><span>You don't have to answer.</span></p>
     </div>
     <div className="container">
@@ -24,7 +24,7 @@ const Header = () => (
       <a href="#who">
           {/* <i className="fa fa-chevron-circle-down fa-5x"></i> */}
           <FontAwesome name='chevron-circle-down'
-            size='5x'
+            size='10x'
           />
       </a>
 
@@ -55,7 +55,7 @@ const TemplateWrapper = ({ children }) => (
       {children()}
     </div>
     <footer>
-      <p>&copy; 2017 Jordan T Riddick.</p>
+      <p>&copy; 2018 Jordan Taylor Riddick.</p>
     </footer>
   </div>
 )
@@ -65,4 +65,3 @@ TemplateWrapper.propTypes = {
 }
 
 export default TemplateWrapper
-

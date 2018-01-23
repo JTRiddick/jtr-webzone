@@ -9,7 +9,7 @@ import '../assets/scss/style.scss';
 
 
 export default ({data}) => {
-  console.log('data ', data);
+  // console.log('data ', data);
   return(
 
     <main className="page-container">
