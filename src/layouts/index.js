@@ -24,7 +24,7 @@ const Header = () => (
       <a href="#who">
           {/* <i className="fa fa-chevron-circle-down fa-5x"></i> */}
           <FontAwesome name='chevron-circle-down'
-            size='10x'
+            size='5x'
           />
       </a>
 

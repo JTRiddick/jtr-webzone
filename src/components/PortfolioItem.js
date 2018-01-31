@@ -16,6 +16,7 @@ class PortfolioItem extends React.Component {
         title:""
       },
       resolutions:{},
+      disableBackgroundClicks:props.clickState
     }
     this.handleClick = this.handleClick.bind(this);
   }
@@ -31,7 +32,7 @@ class PortfolioItem extends React.Component {
   }
 
   handleClick(){
-    console.log('handleClick called ,', this.state.showModal)
+    // console.log('handleClick called ,', this.state.showModal)
     this.setState(prevState => ({
       showModal: !prevState.showModal
     }));
@@ -41,8 +42,10 @@ class PortfolioItem extends React.Component {
   render(){
     // console.log('portfolio item props at render: ', this.props);
     // console.log('modal on? ', this.state.showModal);
+    // console.log('pointer status ?', this.state.pointerEvents);
     let item = this.state.item;
     let resolutions = this.state.resolutions;
+    let pointerEvents = this.state.pointerEvents ? 'auto' : 'none';
     let modal = (<div className={`modal`}>
       <div className={`modal-content`}>
         <div
@@ -60,7 +63,9 @@ class PortfolioItem extends React.Component {
     const displayItem = (
       <div
         className={`portfolio-item`}
-        style={{backgroundColor:`gray`}}
+        style={{backgroundColor:`gray`,
+          pointerEvents:this.state.disableBackgroundClicks
+        }}
         onClick={this.handleClick}>
 
         <h4><span>{item.title}</span></h4>
@@ -73,7 +78,7 @@ class PortfolioItem extends React.Component {
       </div>)
 
     return(
-      <div>
+      <div style={{}}>
         {displayItem ? displayItem : ""}
         {this.state.showModal ? modal : ""}
       </div>

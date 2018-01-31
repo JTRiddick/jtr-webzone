@@ -208,7 +208,7 @@ a{
 }
 .block-two{
   .portfolio-list{
-    background-color: gray;
+    content:"";
   }
 
 }
@@ -256,9 +256,12 @@ a{
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 1em auto;
-  border: 2px solid rgba(227, 227, 227, 1);
 
   .portfolio-item{
+
+    h4{
+      margin-bottom: 0;
+    }
 
    span{
      display: inline-block;

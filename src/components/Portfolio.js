@@ -11,14 +11,31 @@ import '../assets/scss/style.scss';
 class Portfolio extends React.Component{
   constructor(props){
     super(props);
+    this.state = {
+      pointerEvents:true
+    }
+    this.handleListClick = this.handleListClick.bind(this);
   }
 
   componentWillMount(){
+    console.log('component will mount ', this);
+
+  }
+
+  componentDidMount(){
     console.log('component did mount ', this);
 
   }
 
+  handleListClick(){
+    console.log('meta click ');
+    this.setState(prevState => ({
+      pointerEvents: prevState.pointerEvents ? false : true
+    }))
+  }
+
   render(){
+    console.log('pointer status ?', this.state.pointerEvents);
     const works = this.props.works;
     const images = this.props.images;
     works.map(piece => {
@@ -36,18 +53,23 @@ class Portfolio extends React.Component{
 
     // console.log('portfolio component props @ render: ', this.props);
     // console.log('works object :', works )
+
     return (
       <div>
         <h2>Important Works</h2>
         <div
-          style={{
-            
+          className="portfolio-list"
+          style={{backgroundColor:`gray`,
+          pointerEvents:this.state.pointerEvents ? 'auto' : 'none'
           }}
-          className="portfolio-list">
+          onClick={this.handleListClick}
+          >
+
           {works.map(piece => {
-            console.log('piece is ', piece.node);
-            return (<div key={piece.node.set}>
-              <PortfolioItem piece={works[`${piece.node.set-1}`]}/>
+            // console.log('piece is ', piece.node);
+            return (<div key={piece.node.set}
+              style={{pointerEvents:this.state.pointerEvents ? 'auto' : 'none'}}>
+              <PortfolioItem piece={works[`${piece.node.set-1}`]} clickState={this.state.pointerEvents}/>
             </div>)
           })}
 
