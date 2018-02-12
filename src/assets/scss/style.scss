@@ -190,7 +190,7 @@ a{
 }
 
 .block{
-  z-index: 1;
+  z-index: 10;
   padding: 0.25em;
   font-size: 1em;
   height:100%;
@@ -213,8 +213,8 @@ a{
 
 }
 .block-three{
-  box-shadow: 6px 16px 22px $bluprint;
-  z-index: -1;
+  box-shadow: 3px 8px 16px 8px $bluprint;
+  z-index: 2;
 
   .col-third{
     text-align: center;
@@ -238,6 +238,7 @@ a{
 .row{
   margin-right: -15px;
   margin-left: -15px;
+  max-width: 100%;
   .col{
     float: left;
   }
@@ -432,6 +433,12 @@ a{
   overflow: auto;
   color:$grau;
   padding: 3px;
+  h3{
+    font-family: 'Dosis','Raleway','Open Sans',sans-serif;
+    font-size: 1.5em;
+    padding:4px;
+    
+  }
   a{
     display: inline-block;
   }

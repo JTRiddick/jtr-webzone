@@ -26,11 +26,16 @@
     "react-scrollchor": "^4.0.0",
     "typography-theme-kirkham": "^0.16.3"
   },
+  "homepage": "http://jtriddick.com",
   "keywords": [
-    "gatsby"
+    "gatsby","riddick","jtr"
   ],
   "license": "MIT",
   "main": "n/a",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JTRiddick/jtr-webzone.git"
+  },
   "scripts": {
     "deploy": "gatsby build && gh-pages -d public --branch master",
     "build": "gatsby build",

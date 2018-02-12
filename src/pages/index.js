@@ -8,13 +8,13 @@ import Portfolio from '../components/Portfolio.js';
 import '../assets/scss/style.scss';
 
 
-export default ({data}) => {
+const IndexPage = ({data}) => {
   // console.log('data ', data);
   return(
 
     <main className="page-container">
       <section className= "container group block block-one" >
-
+        {/* move to component, call from layout */}
         <div className="panel panel-default" id="who">
           <div className="panel-heading">
             <h2>But Who This?</h2>
@@ -39,6 +39,7 @@ export default ({data}) => {
       </section>
 
       <section className= "container group block block-three">
+        {/* move to component, call from layout */}
 
         <div className="panel panel-default">
           <div className="panel-heading">
@@ -82,6 +83,7 @@ export default ({data}) => {
               <div className="col-third">
                 <div id="contact">
                   <div className="well well-lg">
+                    <h3>Find Me</h3>
                     <a href="http://github.com/JTRiddick" target="_blank"><i className="fa fa-github fa-4x"></i></a>
                     <a href="https://www.linkedin.com/in/jtriddick/" target="_blank"><i className="fa fa-linkedin fa-4x"></i></a>
                     <div className="well contact">
@@ -98,7 +100,7 @@ export default ({data}) => {
     </main>
   )
 }
-// export default IndexPage;
+export default IndexPage;
 
 
 export const pageQuery = graphql`
