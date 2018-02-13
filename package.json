@@ -3,7 +3,7 @@
   "description": "JTR Personal Website",
   "version": "1.0.0",
   "author": "JTR <riddick.taylor@gmail.com>",
-  "dependencies": {
+  "devDependencies": {
     "gatsby": "^1.9.115",
     "gatsby-image": "^1.0.28",
     "gatsby-link": "^1.6.28",
@@ -24,7 +24,9 @@
     "react-fontawesome": "^1.6.1",
     "react-modal": "^3.1.7",
     "react-scrollchor": "^4.0.0",
-    "typography-theme-kirkham": "^0.16.3"
+    "typography-theme-kirkham": "^0.16.3",
+    "gh-pages": "^1.0.0",
+    "prettier": "^1.8.2"
   },
   "homepage": "http://jtriddick.com",
   "keywords": [
@@ -42,9 +44,5 @@
     "develop": "gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "devDependencies": {
-    "gh-pages": "^1.0.0",
-    "prettier": "^1.8.2"
   }
 }

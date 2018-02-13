@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'gatsby-link';
 
+import SuperHeader from '../components/SuperHeader.js';
 import Portfolio from '../components/Portfolio.js';
 
 
@@ -11,8 +12,10 @@ import '../assets/scss/style.scss';
 const IndexPage = ({data}) => {
   // console.log('data ', data);
   return(
-
     <main className="page-container">
+      <div>
+        <SuperHeader />
+      </div>
       <section className= "container group block block-one" >
         {/* move to component, call from layout */}
         <div className="panel panel-default" id="who">
