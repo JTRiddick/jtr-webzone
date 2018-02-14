@@ -63,7 +63,7 @@ class PortfolioItem extends React.Component {
     const displayItem = (
       <div
         className={`portfolio-item`}
-        style={{backgroundColor:`gray`,
+        style={{
           pointerEvents:this.state.disableBackgroundClicks
         }}
         onClick={this.handleClick}>

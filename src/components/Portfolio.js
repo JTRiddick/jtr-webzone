@@ -60,7 +60,7 @@ class Portfolio extends React.Component{
         <div
           className="portfolio-list"
           style={{backgroundColor:`gray`,
-          pointerEvents:this.state.pointerEvents ? 'auto' : 'none'
+          pointerEvents:this.state.pointerEvents ? 'auto' : 'none',
           }}
           onClick={this.handleListClick}
           >
