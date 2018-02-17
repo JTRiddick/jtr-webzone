@@ -296,6 +296,11 @@ a{
   }
 
 }
+
+.portfolio-item:hover{
+  cursor: pointer;
+}
+
 .modal{
   color:$deepPurp;
   position: fixed;
@@ -310,23 +315,21 @@ a{
   pointer-events: none;
 
   .modal-content{
+    overflow: auto;
     font-size: 18px;
     max-height: 720px;
-    max-width:960px;
+    max-width: 520px;
     position: fixed;
-    top: 33%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin:10% auto;
-    padding:5px 20px 5px 20px;
+    margin:0 auto;
+    padding:0 0 33px 0;
     border-radius:10px;
-    background:#fff;
-    background: -moz-linear-gradient(#fff, $deepPurp);
-	  background: -webkit-linear-gradient(#fff, $deepPurp);
-	  background: -o-linear-gradient(#fff, $deepPurp);
+    background-image: linear-gradient(to top left, $deepPurp, $wit);
 
     img{
-      max-width: 80%;
+      max-width: 100%;
     }
     .button{
       display: inline-block;
@@ -341,13 +344,13 @@ a{
 
   h3{
     font-style:italic;
-    padding:9px;
+    padding:2px;
     font-family: 'Dosis-SemiBold';
   }
   p{
     padding:9px;
     color:$wit;
-    display: inline;
+    display: inline-block;
   }
 
 }
