@@ -67,10 +67,12 @@ class Portfolio extends React.Component{
 
           {works.map(piece => {
             // console.log('piece is ', piece.node);
-            return (<div key={piece.node.set}
-              style={{pointerEvents:this.state.pointerEvents ? 'auto' : 'none'}}>
-              <PortfolioItem piece={works[`${piece.node.set-1}`]} clickState={this.state.pointerEvents}/>
-            </div>)
+            return (
+              <PortfolioItem key={piece.node.set}
+                style={{pointerEvents:this.state.pointerEvents ? 'auto' : 'none'}}
+                piece={works[`${piece.node.set-1}`]}
+                clickState={this.state.pointerEvents}/>
+            )
           })}
 
         </div>

@@ -253,7 +253,7 @@ a{
   max-height: 416px;
   overflow: none;
   div{
-    // height: 416px; //temporary kludge!
+    max-width: 100%;
   }
 }
 
