@@ -55,7 +55,7 @@ class Portfolio extends React.Component{
     // console.log('works object :', works )
 
     return (
-      <div>
+      <div id="portfolio">
         <h2>Important Works</h2>
         <div
           className="portfolio-list"

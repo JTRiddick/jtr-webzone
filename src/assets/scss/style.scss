@@ -97,7 +97,11 @@ a{
   }
   :nth-child(2){
     max-width: 48%;
-    margin:10% auto 10px auto;
+    margin:16px auto 10px auto;
+
+    h2{
+      text-shadow:3px 1px $deepPurp;
+    }
   }
 
   :last-child{
@@ -105,13 +109,15 @@ a{
     padding-top:0;
     margin-bottom:0;
     padding-bottom:0;
-    bottom:-25%;
+    bottom:-45%;
     position: relative;
     z-index: 15;
   }
   h2 ~ p{
     position: relative;
-    top: 128px;
+    top: 356px;
+    font-size:1.2rem;
+    line-height: 1.333;
   }
 }
 
@@ -258,7 +264,6 @@ a{
 }
 
 .portfolio-list{
-  // max-width: 100%;
   overflow: none;
   display: grid;
   justify-content: space-around;
@@ -521,18 +526,34 @@ footer{
       h1{
         font-size: 3em;
         font-weight: 500;
+        margin: 15px auto;
       }
       h2{
         font-size:1.75em;
         line-height: 0.9;
+        margin:0 auto;
+        position: relative;
+      }
+      h2 ~ p{
+        display:none;
       }
     }
   }
   .superheader :nth-child(2){
     max-width: 100%;
     margin:6px auto;
-    position: absolute;
+    position: relative;
   }
+  #portfolio{
+    .portfolio-list{
+      display: grid;
+      margin:0 auto;
+      padding:0;
+      grid-template-columns:100%;
+      grid-template-rows:100%;
+    }
+  }
+
 }
 
 @media screen and(max-width: 960px) {
