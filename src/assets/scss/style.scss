@@ -513,7 +513,30 @@ footer{
   }
 }
 
+@media screen and(max-width: 480px){
+  .superheader{
+    .container{
+      margin:0 auto;
+      padding: 0;
+      h1{
+        font-size: 3em;
+        font-weight: 500;
+      }
+      h2{
+        font-size:1.75em;
+        line-height: 0.9;
+      }
+    }
+  }
+  .superheader :nth-child(2){
+    max-width: 100%;
+    margin:6px auto;
+    position: absolute;
+  }
+}
+
 @media screen and(max-width: 960px) {
+
   .container {
     max-width:960px;
   }
