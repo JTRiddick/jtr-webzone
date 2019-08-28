@@ -2,9 +2,9 @@ const path = require(`path`)
 
 module.exports = {
   siteMetadata: {
-    title: `JTRiddick Portfolio Page`,
-    author: `Jordan Taylor Riddick`,
-    description: "JT Riddick front end react web developer"
+    title: `NTRiddick Portfolio Page`,
+    author: `Nadezhda Taylor Riddick`,
+    description: "NT Riddick front end react web developer"
   },
   pathPrefix: '/',
   plugins: [

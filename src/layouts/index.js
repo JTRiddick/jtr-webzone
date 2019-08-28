@@ -10,9 +10,9 @@ import '../assets/scss/style.scss';
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="JTRiddick"
+      title="NTRiddick"
       meta={[
-        { name: 'description', content: 'Jordan Taylor Riddick, developer designer' },
+        { name: 'description', content: 'Nadezdha Taylor Riddick, developer designer' },
         { name: 'keywords', content: 'Riddick, developer, designer, javascript, react, node' },
       ]}
     />
@@ -29,7 +29,7 @@ const TemplateWrapper = ({ children }) => (
       {children()}
     </div>
     <footer>
-      <p>&copy; 2018 Jordan Taylor Riddick.</p>
+      <p>&copy; 2019 Nadezdha Taylor Riddick.</p>
     </footer>
   </div>
 )

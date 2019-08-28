@@ -256,7 +256,7 @@ a{
 
 .portfolio-list > div{
   width: 100%;
-  max-height: 416px;
+  max-height: 832px;
   overflow: none;
   div{
     max-width: 100%;
@@ -264,7 +264,6 @@ a{
 }
 
 .portfolio-list{
-  overflow: none;
   display: grid;
   justify-content: space-around;
   margin: 0;
