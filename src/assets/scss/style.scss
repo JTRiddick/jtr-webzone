@@ -257,7 +257,7 @@ a{
 .portfolio-list > div{
   width: 100%;
   max-height: 832px;
-  overflow: none;
+
   div{
     max-width: 100%;
   }
@@ -293,9 +293,11 @@ a{
     }
     .portfolio-content{
       width: inherit;
-      height:inherit;
+      height: inherit;
       background-color:$portfolioBgDark;
-
+    }
+    p{
+      margin-bottom: 0;
     }
   }
 

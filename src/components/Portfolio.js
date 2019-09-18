@@ -35,7 +35,7 @@ class Portfolio extends React.Component{
   }
 
   render(){
-    console.log('pointer status ?', this.state.pointerEvents);
+    // console.log('pointer status ?', this.state.pointerEvents);
     const works = this.props.works;
     const images = this.props.images;
     works.map(piece => {
@@ -59,7 +59,7 @@ class Portfolio extends React.Component{
         <h2>Important Works</h2>
         <div
           className="portfolio-list"
-          style={{backgroundColor:`gray`,
+          style={{
           pointerEvents:this.state.pointerEvents ? 'auto' : 'none',
           }}
           onClick={this.handleListClick}
